@@ -1,0 +1,396 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&amp;family=Manrope:wght@100..900&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-fixed":"#e0e3e8","secondary-fixed-dim":"#ffb785","tertiary":"#3d4145","on-tertiary-fixed":"#181c20","tertiary-fixed-dim":"#c3c7cc","primary-fixed":"#d9e2ff","inverse-surface":"#2e3132","secondary-container":"#fc9342","on-tertiary-container":"#cbced3","on-background":"#191c1d","inverse-on-surface":"#f0f1f2","outline":"#737784","on-tertiary":"#ffffff","on-surface-variant":"#434653","on-primary-container":"#bcceff","on-primary-fixed":"#001945","error":"#ba1a1a","outline-variant":"#c3c6d5","surface-dim":"#d9dadb","surface-container-high":"#e7e8e9","primary":"#003c90","on-secondary-container":"#693200","on-primary-fixed-variant":"#00419c","on-secondary-fixed":"#301400","surface-container-lowest":"#ffffff","on-secondary":"#ffffff","error-container":"#ffdad6","on-surface":"#191c1d","surface-container":"#edeeef","on-error":"#ffffff","primary-fixed-dim":"#b0c6ff","surface-variant":"#e1e3e4","surface-container-low":"#f3f4f5","on-primary":"#ffffff","primary-container":"#0f52ba","surface-container-highest":"#e1e3e4","surface-tint":"#1d59c1","secondary":"#954a00","on-tertiary-fixed-variant":"#43474c","surface":"#f8f9fa","on-secondary-fixed-variant":"#713700","background":"#f8f9fa","inverse-primary":"#b0c6ff","tertiary-container":"#54585d","surface-bright":"#f8f9fa","secondary-fixed":"#ffdcc6","on-error-container":"#93000a"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"unit":"8px","margin-mobile":"16px","margin-desktop":"40px","container-max":"1280px","gutter":"24px"},"fontFamily":{"body-md":["Hanken Grotesk"],"display-lg-mobile":["Manrope"],"headline-md":["Manrope"],"label-sm":["Hanken Grotesk"],"display-lg":["Manrope"],"body-lg":["Hanken Grotesk"],"headline-sm":["Manrope"],"label-md":["Hanken Grotesk"]},"fontSize":{"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-md":["32px",{"lineHeight":"40px","fontWeight":"700"}],"label-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-sm":["24px",{"lineHeight":"32px","fontWeight":"700"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.05em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-background"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between">
+  <div class="flex items-center gap-4">
+    <img alt="logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLv6LGjSP8co3lKEukuonqv5wwJa2TjMf5BdN5Z0qjX85asAdMwRwXj5m5mRiBf1gJ68P8LRh2K3FFKD_KwW34KHCdZ3r_BO0zWW1l7eDLFSS5fup2eAnaZKbsih_IVmnGLGOEtA-X8fg2SHVt52o0XCG3cMLFVK19zUiV0QFUXien8u-z9aWBJGQWBWg7tJ3Ax7LIWaPnQ3AEE3fty4n9_2mvzvDOICbXXKa6BqctHcBykjbiz0Iz77A4HXGRjV48CUKMpdTly7hA">
+    <span class="font-headline-sm text-headline-sm text-primary">Lombok Auto Rent</span>
+  </div>
+  
+  <nav class="hidden lg:flex items-center gap-12">
+    <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Home</a>
+    <a class="font-label-md text-label-md text-primary font-bold" href="#">Car List</a>
+    <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Blog</a>
+  </nav>
+
+  <div class="flex items-center gap-6">
+    <button class="text-on-surface-variant hover:text-primary transition-colors">
+      <span class="material-symbols-outlined">search</span>
+    </button>
+    <a class="bg-[#f99143] text-on-secondary px-8 py-2.5 rounded-lg font-label-md text-label-md hover:opacity-90 transition-all uppercase tracking-wider shadow-sm" href="#">
+      BOOK NOW
+    </a>
+    <button class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary hover:bg-primary-container transition-colors">
+      <span class="material-symbols-outlined">person</span>
+    </button>
+  </div>
+</div></header><main class="w-full pt-20"><div class="flex flex-col w-full">
+<!-- Immersive Header Scrim Section -->
+<section class="relative w-full bg-surface py-12 lg:py-20 border-b border-outline-variant/30">
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="flex flex-col gap-4">
+<span class="font-label-md text-label-md text-primary uppercase tracking-[0.2em]">Reservation Portal</span>
+<h1 class="font-display-lg text-display-lg text-on-background max-w-2xl">Complete Your Booking</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">Experience the freedom of Lombok with our premium fleet. Your journey to the island's hidden gems starts here.</p>
+</div>
+</div>
+<!-- Decorative background element -->
+<div class="absolute top-0 right-0 w-1/3 h-full overflow-hidden pointer-events-none opacity-10">
+<span class="material-symbols-outlined text-[400px] text-primary rotate-12 -mr-32 -mt-20">directions_car</span>
+</div>
+</section>
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop py-12 lg:py-20 w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Main Form Column -->
+<div class="lg:col-span-8 flex flex-col gap-12">
+<form class="flex flex-col gap-16" id="bookingForm">
+<!-- Step 1: Vehicle Selection -->
+<div class="flex flex-col gap-8">
+<div class="flex items-center gap-4">
+<span class="w-10 h-10 rounded-full bg-primary-fixed text-primary flex items-center justify-center font-bold">1</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Select Your Vehicle</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<label class="relative cursor-pointer group">
+<input checked="" class="peer sr-only" name="car_category" type="radio" value="economy">
+<div class="p-6 rounded-xl bg-surface border border-outline-variant peer-checked:border-primary peer-checked:bg-primary/5 transition-all flex flex-col gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">directions_car</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase">Economy</p>
+<p class="font-headline-sm text-headline-sm text-on-surface">Hatchback</p>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Toyota Agya or similar</p>
+</div>
+</label>
+<label class="relative cursor-pointer group">
+<input class="peer sr-only" name="car_category" type="radio" value="luxury">
+<div class="p-6 rounded-xl bg-surface border border-outline-variant peer-checked:border-primary peer-checked:bg-primary/5 transition-all flex flex-col gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">airport_shuttle</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase">Premium</p>
+<p class="font-headline-sm text-headline-sm text-on-surface">Luxury SUV</p>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Toyota Fortuner / Pajero</p>
+</div>
+</label>
+<label class="relative cursor-pointer group">
+<input class="peer sr-only" name="car_category" type="radio" value="family">
+<div class="p-6 rounded-xl bg-surface border border-outline-variant peer-checked:border-primary peer-checked:bg-primary/5 transition-all flex flex-col gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">group</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase">Spacious</p>
+<p class="font-headline-sm text-headline-sm text-on-surface">Family Van</p>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Toyota Innova Zenix</p>
+</div>
+</label>
+</div>
+</div>
+<!-- Step 2: Service Preference -->
+<div class="flex flex-col gap-8">
+<div class="flex items-center gap-4">
+<span class="w-10 h-10 rounded-full bg-primary-fixed text-primary flex items-center justify-center font-bold">2</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Service Type</h2>
+</div>
+<div class="flex flex-col md:flex-row gap-6">
+<label class="flex-1 flex items-center gap-4 p-5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="w-5 h-5 accent-primary" name="service_type" type="radio" value="driver">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">With Professional Driver</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Includes fuel and local expertise</span>
+</div>
+</label>
+<label class="flex-1 flex items-center gap-4 p-5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<input class="w-5 h-5 accent-primary" name="service_type" type="radio" value="self">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Self-Drive (Lepas Kunci)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Complete freedom to explore</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Step 3: Logistics -->
+<div class="flex flex-col gap-8">
+<div class="flex items-center gap-4">
+<span class="w-10 h-10 rounded-full bg-primary-fixed text-primary flex items-center justify-center font-bold">3</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Rental Details</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10">
+<!-- Pick up -->
+<div class="flex flex-col gap-4">
+<label class="font-label-md text-label-md text-on-surface uppercase tracking-wide">Pick-up Location</label>
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-primary group-focus-within:text-secondary transition-colors">location_on</span>
+<select class="w-full bg-surface-container-low border-b-2 border-outline-variant p-4 pl-12 font-body-md focus:outline-none focus:border-primary appearance-none transition-all">
+<option>Lombok International Airport (LOP)</option>
+<option>Mataram City Center</option>
+<option>Senggigi Area</option>
+<option>Kuta Lombok</option>
+<option>Bangsal Harbor (Gili Access)</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<label class="font-label-md text-label-md text-on-surface uppercase tracking-wide">Pick-up Date &amp; Time</label>
+<div class="grid grid-cols-2 gap-2">
+<input class="bg-surface-container-low border-b-2 border-outline-variant p-4 font-body-md focus:outline-none focus:border-primary transition-all" type="date">
+<input class="bg-surface-container-low border-b-2 border-outline-variant p-4 font-body-md focus:outline-none focus:border-primary transition-all" type="time">
+</div>
+</div>
+<!-- Drop off -->
+<div class="flex flex-col gap-4">
+<label class="font-label-md text-label-md text-on-surface uppercase tracking-wide">Drop-off Location</label>
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-primary group-focus-within:text-secondary transition-colors">fmd_bad</span>
+<select class="w-full bg-surface-container-low border-b-2 border-outline-variant p-4 pl-12 font-body-md focus:outline-none focus:border-primary appearance-none transition-all">
+<option>Lombok International Airport (LOP)</option>
+<option>Mataram City Center</option>
+<option>Senggigi Area</option>
+<option>Kuta Lombok</option>
+<option>Bangsal Harbor (Gili Access)</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<label class="font-label-md text-label-md text-on-surface uppercase tracking-wide">Drop-off Date &amp; Time</label>
+<div class="grid grid-cols-2 gap-2">
+<input class="bg-surface-container-low border-b-2 border-outline-variant p-4 font-body-md focus:outline-none focus:border-primary transition-all" type="date">
+<input class="bg-surface-container-low border-b-2 border-outline-variant p-4 font-body-md focus:outline-none focus:border-primary transition-all" type="time">
+</div>
+</div>
+</div>
+</div>
+<!-- Step 4: Personal -->
+<div class="flex flex-col gap-8 bg-surface-container-lowest p-8 rounded-2xl shadow-sm">
+<div class="flex items-center gap-4">
+<span class="w-10 h-10 rounded-full bg-primary-fixed text-primary flex items-center justify-center font-bold">4</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Personal Information</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Full Name (as in Passport)</label>
+<input class="w-full bg-surface border-b border-outline p-3 font-body-md focus:outline-none focus:border-primary focus:bg-surface-bright transition-all" placeholder="John Doe" type="text">
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Email Address</label>
+<input class="w-full bg-surface border-b border-outline p-3 font-body-md focus:outline-none focus:border-primary focus:bg-surface-bright transition-all" placeholder="john@example.com" type="email">
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Phone / WhatsApp Number</label>
+<div class="flex gap-2">
+<span class="bg-surface-container-high px-3 flex items-center rounded text-label-md">+62</span>
+<input class="w-full bg-surface border-b border-outline p-3 font-body-md focus:outline-none focus:border-primary focus:bg-surface-bright transition-all" placeholder="812 3456 789" type="tel">
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Country of Origin</label>
+<input class="w-full bg-surface border-b border-outline p-3 font-body-md focus:outline-none focus:border-primary focus:bg-surface-bright transition-all" placeholder="Australia" type="text">
+</div>
+</div>
+<!-- Upload -->
+<div class="mt-4">
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-3">Upload Passport Photo / ID</label>
+<div class="border-2 border-dashed border-outline-variant rounded-xl p-10 flex flex-col items-center justify-center gap-3 bg-surface hover:bg-primary/5 transition-all cursor-pointer group">
+<span class="material-symbols-outlined text-4xl text-outline group-hover:text-primary transition-colors">cloud_upload</span>
+<div class="text-center">
+<p class="font-label-md text-label-md text-on-surface">Click to upload or drag and drop</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">PNG, JPG or PDF (max. 5MB)</p>
+</div>
+<input class="hidden" id="passportUpload" type="file">
+</div>
+</div>
+</div>
+<!-- Step 5: Payment -->
+<div class="flex flex-col gap-8">
+<div class="flex items-center gap-4">
+<span class="w-10 h-10 rounded-full bg-primary-fixed text-primary flex items-center justify-center font-bold">5</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Payment Method</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<label class="relative cursor-pointer">
+<input checked="" class="peer sr-only" name="payment" type="radio" value="cc">
+<div class="p-6 rounded-xl border border-outline-variant peer-checked:border-primary peer-checked:bg-primary/5 transition-all flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant">credit_card</span>
+<span class="font-label-md text-label-md text-on-surface">Credit Card</span>
+</div>
+</label>
+<label class="relative cursor-pointer">
+<input class="peer sr-only" name="payment" type="radio" value="bank">
+<div class="p-6 rounded-xl border border-outline-variant peer-checked:border-primary peer-checked:bg-primary/5 transition-all flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant">account_balance</span>
+<span class="font-label-md text-label-md text-on-surface">Bank Transfer</span>
+</div>
+</label>
+<label class="relative cursor-pointer">
+<input class="peer sr-only" name="payment" type="radio" value="ewallet">
+<div class="p-6 rounded-xl border border-outline-variant peer-checked:border-primary peer-checked:bg-primary/5 transition-all flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant">account_balance_wallet</span>
+<span class="font-label-md text-label-md text-on-surface">GoPay / OVO</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Finalize -->
+<div class="flex flex-col gap-6 pt-10 border-t border-outline-variant">
+<label class="flex items-start gap-4 cursor-pointer">
+<input class="mt-1 w-5 h-5 rounded accent-primary" type="checkbox">
+<span class="font-body-md text-on-surface-variant">I agree to the <a class="text-primary font-bold hover:underline" href="#">Terms &amp; Conditions</a>, including insurance policies and local driving regulations of Lombok Auto Rent.</span>
+</label>
+<button class="w-full bg-primary text-on-primary py-5 rounded-full font-headline-sm text-headline-sm hover:bg-primary-container transition-all shadow-lg hover:shadow-primary/25 active:scale-[0.98]" type="submit">
+              Confirm Booking Reservation
+            </button>
+</div>
+</form>
+</div>
+<!-- Sidebar Column: Summary & Trust -->
+<aside class="lg:col-span-4 flex flex-col gap-8 sticky top-24">
+<!-- Booking Summary Card -->
+<div class="bg-surface-container rounded-2xl p-8 flex flex-col gap-8 shadow-md">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Booking Summary</h3>
+<div class="flex flex-col gap-6">
+<div class="relative w-full aspect-video rounded-xl overflow-hidden bg-surface-dim">
+<img class="w-full h-full object-cover" data-alt="A clean front-three-quarter studio shot of a modern white Toyota Innova Zenix SUV against a minimal soft grey background. The car is polished and gleaming, showcasing premium build quality. Soft cinematic lighting with subtle reflections of a tropical setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeZPp5A5SWdBZY0gI5aJDtS2JUkaP0f9-UR1IziJM-hqb49XU90J99Sh659pekV77MrBfmEx1FoBf0s4vlq4Cq6nfVYxLc5LJwGX1a9p9ie0EVJW_AhTjM2376yIX7tdPr0Y34D9dezT4_xWWk1hBKR29t_M_4RPjoPikvVhGyrtJqEIWGGMXnG0A8mg0Mqi5oSg7cEQ-3AgHnv7JNH7SJE0hpE-fDoy-NmY_lDuoRA2LZEoglXpvh">
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Toyota Innova Zenix</h4>
+<p class="font-body-md text-on-surface-variant">Automatic • 7 Seats • 2023 Model</p>
+</div>
+<div class="bg-secondary/10 text-secondary px-3 py-1 rounded-full font-label-sm text-label-sm">Premium Class</div>
+</div>
+<div class="space-y-4 pt-6 border-t border-outline-variant/30">
+<div class="flex justify-between font-body-md">
+<span class="text-on-surface-variant">Rental Duration</span>
+<span class="text-on-surface font-bold">3 Days</span>
+</div>
+<div class="flex justify-between font-body-md">
+<span class="text-on-surface-variant">Daily Rate</span>
+<span class="text-on-surface">Rp 850.000</span>
+</div>
+<div class="flex justify-between font-body-md">
+<span class="text-on-surface-variant">Delivery Fee</span>
+<span class="text-primary font-bold">FREE</span>
+</div>
+</div>
+<div class="pt-6 border-t border-outline-variant flex justify-between items-baseline">
+<span class="font-headline-sm text-headline-sm text-on-surface">Total</span>
+<div class="text-right">
+<span class="block font-display-lg text-primary text-[32px] leading-tight">Rp 2.550.000</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">All taxes included</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Trust & Help Card -->
+<div class="bg-primary text-on-primary rounded-2xl p-8 flex flex-col gap-6 shadow-xl">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container">verified_user</span>
+<h4 class="font-headline-sm text-headline-sm">Book with Confidence</h4>
+</div>
+<ul class="flex flex-col gap-4">
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-secondary-container text-sm">check_circle</span>
+<span class="font-body-md">24/7 Roadside Assistance</span>
+</li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-secondary-container text-sm">check_circle</span>
+<span class="font-body-md">Free Cancellation up to 48h</span>
+</li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-secondary-container text-sm">check_circle</span>
+<span class="font-body-md">Clean &amp; Sanitized Vehicles</span>
+</li>
+</ul>
+<div class="mt-4 pt-6 border-t border-on-primary/20 flex flex-col gap-4">
+<p class="font-label-sm text-label-sm uppercase opacity-70">Need instant help?</p>
+<a class="flex items-center justify-center gap-2 bg-on-primary text-primary py-3 rounded-full font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary transition-all" href="https://wa.me/623701234567">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+               Chat with our Concierge
+            </a>
+</div>
+</div>
+<!-- Location Visualizer (Mini Map) -->
+<div class="relative rounded-2xl overflow-hidden group">
+<div class="w-full h-48 bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-700" data-location="Lombok International Airport"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
+<span class="text-white font-label-md text-label-md flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">pin_drop</span>
+                    Lombok Airport Depot
+                </span>
+</div>
+</div>
+</aside>
+</div>
+</div>
+<!-- Why Choose Us Horizontal Ticker -->
+<section class="bg-surface-container-high py-12 mt-12 overflow-hidden">
+<div class="flex flex-nowrap gap-12 animate-scroll items-center">
+<div class="flex items-center gap-4 flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-3xl">handshake</span>
+<span class="font-headline-sm text-headline-sm text-on-surface whitespace-nowrap">Local Experts</span>
+</div>
+<div class="flex items-center gap-4 flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-3xl">health_and_safety</span>
+<span class="font-headline-sm text-headline-sm text-on-surface whitespace-nowrap">Full Insurance</span>
+</div>
+<div class="flex items-center gap-4 flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-3xl">schedule</span>
+<span class="font-headline-sm text-headline-sm text-on-surface whitespace-nowrap">Always On Time</span>
+</div>
+<div class="flex items-center gap-4 flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-3xl">workspace_premium</span>
+<span class="font-headline-sm text-headline-sm text-on-surface whitespace-nowrap">Luxury Fleet</span>
+</div>
+<!-- Repeat for seamless scroll effect -->
+<div class="flex items-center gap-4 flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-3xl">handshake</span>
+<span class="font-headline-sm text-headline-sm text-on-surface whitespace-nowrap">Local Experts</span>
+</div>
+<div class="flex items-center gap-4 flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-3xl">health_and_safety</span>
+<span class="font-headline-sm text-headline-sm text-on-surface whitespace-nowrap">Full Insurance</span>
+</div>
+</div>
+</section>
+<style>
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-scroll {
+      animation: scroll 30s linear infinite;
+    }
+  </style>
+<script>
+    // Micro-interactions for form
+    document.querySelectorAll('input[name="car_category"]').forEach(radio => {
+      radio.addEventListener('change', (e) => {
+        // Here we would typically update the summary card dynamically
+        console.log('Vehicle selected:', e.target.value);
+      });
+    });
+
+    // File upload visual feedback
+    const uploadArea = document.querySelector('.border-dashed');
+    const fileInput = document.getElementById('passportUpload');
+    
+    uploadArea.addEventListener('click', () => fileInput.click());
+    
+    fileInput.addEventListener('change', (e) => {
+      if(e.target.files.length > 0) {
+        uploadArea.querySelector('p').innerText = e.target.files[0].name;
+        uploadArea.classList.add('bg-primary/10');
+      }
+    });
+
+    // Simple scroll reveal for sidebar elements
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const sidebar = document.querySelector('aside');
+      // Adding a subtle parallax effect to decorative background
+      const deco = document.querySelector('.absolute.top-0.right-0');
+      if(deco) deco.style.transform = `translateY(${scrolled * 0.15}px)`;
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container text-on-surface py-20 mt-20"><div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12"><div class="space-y-6"><div class="flex items-center gap-3"><img alt="logo" class="h-6 w-auto" src="https://lh3.googleusercontent.com/aida/AP1WRLv6LGjSP8co3lKEukuonqv5wwJa2TjMf5BdN5Z0qjX85asAdMwRwXj5m5mRiBf1gJ68P8LRh2K3FFKD_KwW34KHCdZ3r_BO0zWW1l7eDLFSS5fup2eAnaZKbsih_IVmnGLGOEtA-X8fg2SHVt52o0XCG3cMLFVK19zUiV0QFUXien8u-z9aWBJGQWBWg7tJ3Ax7LIWaPnQ3AEE3fty4n9_2mvzvDOICbXXKa6BqctHcBykjbiz0Iz77A4HXGRjV48CUKMpdTly7hA"><span class="font-headline-sm text-headline-sm text-primary">Lombok Auto Rent</span></div><p class="font-body-md text-on-surface-variant">Providing premium mobility solutions across Lombok with a focus on luxury, safety, and local expertise.</p><div class="flex gap-4"><a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#"><span class="material-symbols-outlined text-[20px]">share</span></a><a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#"><span class="material-symbols-outlined text-[20px]">camera</span></a><a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#"><span class="material-symbols-outlined text-[20px]">public</span></a></div></div><div class="space-y-4"><h4 class="font-label-md text-label-md text-primary uppercase">Services</h4><nav class="flex flex-col gap-2"><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Airport Transfer</a><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Self Drive Rentals</a><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Luxury Fleet</a><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Corporate Rental</a></nav></div><div class="space-y-4"><h4 class="font-label-md text-label-md text-primary uppercase">Locations</h4><nav class="flex flex-col gap-2"><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Mataram City</a><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Senggigi Beach</a><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Kuta Lombok</a><a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Lombok Airport (LOP)</a></nav></div><div class="space-y-4"><h4 class="font-label-md text-label-md text-primary uppercase">Contact</h4><div class="space-y-3"><div class="flex gap-3 text-on-surface-variant"><span class="material-symbols-outlined text-primary">mail</span><span class="font-body-md">hello@lombokautorent.com</span></div><div class="flex gap-3 text-on-surface-variant"><span class="material-symbols-outlined text-primary">call</span><span class="font-body-md">+62 370 123 4567</span></div><div class="flex gap-3 text-on-surface-variant"><span class="material-symbols-outlined text-primary">pin_drop</span><span class="font-body-md">Jl. Raya Senggigi, Lombok, NTB</span></div></div></div></div><div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop mt-20 pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4 text-on-surface-variant font-label-sm text-label-sm"><p>© 2024 Lombok Auto Rent Car. All rights reserved.</p><div class="flex gap-6"><a class="hover:text-primary" href="#">Privacy Policy</a><a class="hover:text-primary" href="#">Terms of Service</a></div></div></footer>
+
+</body></html>

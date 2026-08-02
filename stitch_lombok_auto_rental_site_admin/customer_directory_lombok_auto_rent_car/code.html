@@ -1,0 +1,286 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={theme:{extend:{"colors":{"outline":"#737784","surface-container":"#edeeef","tertiary-fixed-dim":"#c3c7cc","surface-variant":"#e1e3e4","on-secondary-container":"#693200","secondary-fixed":"#ffdcc6","on-surface":"#191c1d","secondary-fixed-dim":"#ffb785","on-primary-container":"#bcceff","surface-container-low":"#f3f4f5","error":"#ba1a1a","surface-bright":"#f8f9fa","secondary-container":"#fc9342","surface-container-highest":"#e1e3e4","primary-fixed":"#d9e2ff","primary":"#003c90","on-tertiary-fixed":"#181c20","inverse-surface":"#2e3132","on-error-container":"#93000a","primary-container":"#0f52ba","secondary":"#954a00","inverse-primary":"#b0c6ff","surface-tint":"#1d59c1","on-background":"#191c1d","surface-container-high":"#e7e8e9","on-surface-variant":"#434653","on-primary-fixed-variant":"#00419c","on-secondary":"#ffffff","on-secondary-fixed":"#301400","surface-container-lowest":"#ffffff","inverse-on-surface":"#f0f1f2","surface-dim":"#d9dadb","tertiary-fixed":"#e0e3e8","on-tertiary-fixed-variant":"#43474c","background":"#f8f9fa","primary-fixed-dim":"#b0c6ff","on-primary":"#ffffff","error-container":"#ffdad6","outline-variant":"#c3c6d5","on-tertiary":"#ffffff","tertiary-container":"#54585d","tertiary":"#3d4145","on-secondary-fixed-variant":"#713700","surface":"#f8f9fa","on-tertiary-container":"#cbced3","on-primary-fixed":"#001945","on-error":"#ffffff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-desktop":"40px","container-max":"1280px","margin-mobile":"16px","unit":"8px","gutter":"24px"},"fontFamily":{"display-lg-mobile":["Manrope"],"body-md":["Hanken Grotesk"],"label-md":["Hanken Grotesk"],"headline-sm":["Manrope"],"headline-md":["Manrope"],"label-sm":["Hanken Grotesk"],"display-lg":["Manrope"],"body-lg":["Hanken Grotesk"]},"fontSize":{"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.05em","fontWeight":"600"}],"headline-sm":["24px",{"lineHeight":"32px","fontWeight":"700"}],"headline-md":["32px",{"lineHeight":"40px","fontWeight":"700"}],"label-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Hanken+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"></head><body class="bg-background font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col shadow-[1px_0_8px_rgba(0,0,0,0.02)]"><div class="p-8 flex items-center gap-3"><img alt="logo lar.png" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLv6LGjSP8co3lKEukuonqv5wwJa2TjMf5BdN5Z0qjX85asAdMwRwXj5m5mRiBf1gJ68P8LRh2K3FFKD_KwW34KHCdZ3r_BO0zWW1l7eDLFSS5fup2eAnaZKbsih_IVmnGLGOEtA-X8fg2SHVt52o0XCG3cMLFVK19zUiV0QFUXien8u-z9aWBJGQWBWg7tJ3Ax7LIWaPnQ3AEE3fty4n9_2mvzvDOICbXXKa6BqctHcBykjbiz0Iz77A4HXGRjV48CUKMpdTly7hA"><span class="font-headline-sm text-primary">Lombok Auto</span></div><nav class="flex-1 px-4 space-y-1" data-active-classes="bg-primary-container text-on-primary-container font-bold shadow-md"><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="dashboard" href="#"><span class="material-symbols-outlined mr-3">dashboard</span>Dashboard</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="fleet-management" href="#"><span class="material-symbols-outlined mr-3">directions_car</span>Fleet Management</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="booking-management" href="#"><span class="material-symbols-outlined mr-3">calendar_month</span>Bookings</a><a aria-current="page" class="flex items-center px-4 py-3 rounded-xl transition-all group bg-primary-container text-on-primary-container font-bold shadow-md" data-path="customers" href="#"><span class="material-symbols-outlined mr-3">person</span>Customers</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="blog" href="#"><span class="material-symbols-outlined mr-3">newspaper</span>Blog</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="reports-analytics" href="#"><span class="material-symbols-outlined mr-3">bar_chart</span>Reports/Analytics</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="reports" href="#"><span class="material-symbols-outlined mr-3">analytics</span>Reports</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="settings" href="#"><span class="material-symbols-outlined mr-3">settings</span>Settings</a></nav><div class="p-4 mt-auto"><div class="bg-surface-container-low p-4 rounded-xl flex items-center gap-3"><img alt="Profile" class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLsam9tVljf682QFhyYNFpEiHUEF2q0tay3KY2esUqjUzkJ0MQYhmEfSRUkbzRbyXhevleaDcH8Ug1WWLhlyGc_dUTJsMIpVtwIQCCozLPn4xQX_TmZlwEZP8D40NhlFX2cKLDIRdk0-LYeTbe4UndEYTWKYy3PJNPVCseeb08IrZoX3T4NykEwCtez1YcUUGbrBBn3RhpWw4M-zbnRAPNLik7jJZcqcM-5Bqtj0g1u1rO2uJ3PCWBXdCoM"><div class="overflow-hidden"><p class="text-label-md text-on-surface truncate">Admin User</p><p class="text-label-sm text-on-surface-variant truncate">admin@lombokauto.com</p></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/80 backdrop-blur-xl z-40 px-8 flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex-1 max-w-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant">search</span><input class="w-full bg-surface-container-low border-none rounded-full py-2.5 pl-11 pr-4 text-sm focus:ring-2 focus:ring-primary/20" placeholder="Search bookings, vehicles..." type="text"></div></div><div class="flex items-center gap-6"><button class="relative p-2 text-on-surface-variant hover:bg-surface-container-high rounded-full transition-colors"><span class="material-symbols-outlined">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-error rounded-full ring-2 ring-surface"></span></button><div class="h-8 w-[1px] bg-outline-variant"></div><div class="flex items-center gap-3 cursor-pointer group"><span class="text-label-md text-on-surface group-hover:text-primary transition-colors">Super Admin</span><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant" src="https://lh3.googleusercontent.com/aida/AP1WRLsam9tVljf682QFhyYNFpEiHUEF2q0tay3KY2esUqjUzkJ0MQYhmEfSRUkbzRbyXhevleaDcH8Ug1WWLhlyGc_dUTJsMIpVtwIQCCozLPn4xQX_TmZlwEZP8D40NhlFX2cKLDIRdk0-LYeTbe4UndEYTWKYy3PJNPVCseeb08IrZoX3T4NykEwCtez1YcUUGbrBBn3RhpWw4M-zbnRAPNLik7jJZcqcM-5Bqtj0g1u1rO2uJ3PCWBXdCoM"></div></div></header><main class="relative pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Header & Action Bar -->
+<section class="px-8 py-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="space-y-2">
+<div class="flex items-center gap-2 text-primary">
+<span class="w-8 h-[2px] bg-primary"></span>
+<span class="font-label-md uppercase tracking-widest">Global Relations</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface">Customer Directory</h1>
+<p class="font-body-lg text-on-surface-variant max-w-xl">
+                Manage your premium client base, track rental frequency, and monitor membership tiers for Lombok's leading car rental service.
+            </p>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex items-center gap-2 px-6 py-3 bg-surface-container-high text-on-surface font-label-md rounded-full hover:bg-surface-container-highest transition-all group">
+<span class="material-symbols-outlined text-[20px] group-hover:rotate-180 transition-transform">download</span>
+                Export CSV
+            </button>
+<button class="flex items-center gap-2 px-6 py-3 bg-primary text-on-primary font-label-md rounded-full hover:shadow-xl hover:shadow-primary/20 transition-all">
+<span class="material-symbols-outlined text-[20px]">person_add</span>
+                New Customer
+            </button>
+</div>
+</section>
+<!-- Stats Overview Cards -->
+<section class="px-8 pb-12 grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm space-y-4">
+<div class="flex justify-between items-start">
+<div class="p-2 bg-primary/5 rounded-lg text-primary">
+<span class="material-symbols-outlined">group</span>
+</div>
+<span class="text-label-sm text-green-600 bg-green-50 px-2 py-1 rounded">+12%</span>
+</div>
+<div>
+<p class="text-label-md text-on-surface-variant">Total Customers</p>
+<h3 class="text-headline-md font-headline-md">2,842</h3>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm space-y-4">
+<div class="flex justify-between items-start">
+<div class="p-2 bg-secondary-container/10 rounded-lg text-secondary">
+<span class="material-symbols-outlined">star</span>
+</div>
+<span class="text-label-sm text-on-surface-variant bg-surface-container-high px-2 py-1 rounded">Stable</span>
+</div>
+<div>
+<p class="text-label-md text-on-surface-variant">Premium Members</p>
+<h3 class="text-headline-md font-headline-md">148</h3>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm space-y-4">
+<div class="flex justify-between items-start">
+<div class="p-2 bg-tertiary/5 rounded-lg text-tertiary">
+<span class="material-symbols-outlined">verified</span>
+</div>
+<span class="text-label-sm text-green-600 bg-green-50 px-2 py-1 rounded">+5.2%</span>
+</div>
+<div>
+<p class="text-label-md text-on-surface-variant">Retention Rate</p>
+<h3 class="text-headline-md font-headline-md">78.4%</h3>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm space-y-4">
+<div class="flex justify-between items-start">
+<div class="p-2 bg-error/5 rounded-lg text-error">
+<span class="material-symbols-outlined">warning</span>
+</div>
+<span class="text-label-sm text-error bg-error-container/10 px-2 py-1 rounded">Action Required</span>
+</div>
+<div>
+<p class="text-label-md text-on-surface-variant">Inactive (90d+)</p>
+<h3 class="text-headline-md font-headline-md">412</h3>
+</div>
+</div>
+</section>
+<!-- Main Table Section -->
+<section class="px-8 pb-20">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl overflow-hidden">
+<!-- Filter Bar -->
+<div class="p-6 border-b border-outline-variant flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="relative w-full md:w-96">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="w-full pl-12 pr-4 py-3 bg-surface-container-low rounded-full border-none focus:ring-2 focus:ring-primary/20 text-body-md transition-all" placeholder="Search by name, email, or ID..." type="text">
+</div>
+<div class="flex items-center gap-3 w-full md:w-auto">
+<select class="bg-surface-container-low border-none rounded-full px-6 py-3 text-label-md focus:ring-2 focus:ring-primary/20 cursor-pointer">
+<option>Status: All</option>
+<option>Premium</option>
+<option>Standard</option>
+<option>Corporate</option>
+</select>
+<button class="p-3 bg-surface-container-low rounded-full hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined">filter_list</span>
+</button>
+</div>
+</div>
+<!-- Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low/50">
+<th class="px-8 py-5 font-label-md text-on-surface-variant uppercase tracking-wider">Customer</th>
+<th class="px-6 py-5 font-label-md text-on-surface-variant uppercase tracking-wider">Contact Info</th>
+<th class="px-6 py-5 font-label-md text-on-surface-variant uppercase tracking-wider text-center">Bookings</th>
+<th class="px-6 py-5 font-label-md text-on-surface-variant uppercase tracking-wider">Membership</th>
+<th class="px-8 py-5 font-label-md text-on-surface-variant uppercase tracking-wider text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-lowest group transition-colors">
+<td class="px-8 py-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Close-up portrait of a professional businessman in his 40s, light stubble, confident smile, blurred office background with warm lighting, high quality editorial photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAk_xelUcPXKkxB_0LyMP0AsDpLdVgJ5ntAe4Y0OluvpBBJYioHpqpBD2n8itZNBRFt73kb-iLgBVP1hLekHpott6PPVnCMuzF43zyHkgPs2tKwozr3tyfla9vHvh7QrJGZX9L_xvrarEOc5nLbLM7Rb2eR2Vke-zsVrelLAenS-VRNqlgOHENtmRb9iTpXQGEetQ7byv182KXnkiyklvcx5osG7wyduQ0vdMsc0sO2FIJUF_EO1Hv">
+</div>
+<div>
+<p class="font-headline-sm text-[16px] text-on-surface">Alexander Van de Berg</p>
+<p class="text-label-sm text-on-surface-variant">ID: LA-2023-0891</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-6">
+<div class="space-y-1">
+<p class="text-body-md text-on-surface">alex.vdb@klm-logistics.com</p>
+<p class="text-label-sm text-on-surface-variant font-mono">+31 6 1234 5678</p>
+</div>
+</td>
+<td class="px-6 py-6 text-center">
+<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/5 text-primary font-bold">24</span>
+</td>
+<td class="px-6 py-6">
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container text-label-sm rounded-full font-bold">PREMIUM GOLD</span>
+</td>
+<td class="px-8 py-6 text-right">
+<a class="inline-flex items-center gap-1 text-primary font-label-md hover:underline decoration-2 underline-offset-4 group/link" href="#">
+                                    View Profile
+                                    <span class="material-symbols-outlined text-[18px] group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-lowest group transition-colors">
+<td class="px-8 py-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Portrait of a young female traveler, wearing a sun hat and linen shirt, vibrant tropical greenery background, golden hour soft lighting, smiling naturally, travel influencer aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3bo8UbywrBkNh9RcaNT4t3Kbs38eTv7uTtHWKQ61apQXt9muHldLk9FCzrfPG65ZIjvJLIk7UMOQXBuu0dVoxPSLfxnUGBUttGa6vHmReaJfqDaLrpMd2UgY_9i_QElh687Rz1qGN0KM1bs3fmCn81znBsbtG4-wnwWe5norxklCJGO8RN8PWcuePnIPQilq131JKROKFuoYs7Zzf2CEPodrZ20mqqocKG_MbBKvb9vHU36M8ZFOr">
+</div>
+<div>
+<p class="font-headline-sm text-[16px] text-on-surface">Siti Mahendra</p>
+<p class="text-label-sm text-on-surface-variant">ID: LA-2024-1102</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-6">
+<div class="space-y-1">
+<p class="text-body-md text-on-surface">siti.mahendra@islandlife.id</p>
+<p class="text-label-sm text-on-surface-variant font-mono">+62 812 3456 7890</p>
+</div>
+</td>
+<td class="px-6 py-6 text-center">
+<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/5 text-primary font-bold">08</span>
+</td>
+<td class="px-6 py-6">
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant text-label-sm rounded-full font-bold">STANDARD</span>
+</td>
+<td class="px-8 py-6 text-right">
+<a class="inline-flex items-center gap-1 text-primary font-label-md hover:underline decoration-2 underline-offset-4 group/link" href="#">
+                                    View Profile
+                                    <span class="material-symbols-outlined text-[18px] group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-lowest group transition-colors">
+<td class="px-8 py-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Mature Australian man in high-end resort attire, standing in front of a luxury SUV, Lombok coast background with turquoise sea, sharp focus, professional lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmiRoj8Hu2-qcNl5uDnOoEuAJtdy_w7Vn5MT15dT2dhwzyJ8FrXruorMV8mBhxJ2pZs7FgcfqWXugusbsiYbAqaWp1pJXi1WL9PlWUlaijJqjsr64TGsAA_F0XpE8Ud1CO7lWOFiAzu37w-FztvVjdlWFMY9HhDmMUM2_kgtMJxD7TwqKHH_k9CzHMKGwVmoAOPDB_qhvFAvoYqjPtpByGhHaISuFBv8fK4mlORY9tEzjMke4LPkIW">
+</div>
+<div>
+<p class="font-headline-sm text-[16px] text-on-surface">Marcus Thompson</p>
+<p class="text-label-sm text-on-surface-variant">ID: LA-2022-0456</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-6">
+<div class="space-y-1">
+<p class="text-body-md text-on-surface">marcus.t@thompsoncorp.au</p>
+<p class="text-label-sm text-on-surface-variant font-mono">+61 2 9876 5432</p>
+</div>
+</td>
+<td class="px-6 py-6 text-center">
+<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/5 text-primary font-bold">52</span>
+</td>
+<td class="px-6 py-6">
+<span class="px-3 py-1 bg-primary text-on-primary text-label-sm rounded-full font-bold shadow-md">PLATINUM CLUB</span>
+</td>
+<td class="px-8 py-6 text-right">
+<a class="inline-flex items-center gap-1 text-primary font-label-md hover:underline decoration-2 underline-offset-4 group/link" href="#">
+                                    View Profile
+                                    <span class="material-symbols-outlined text-[18px] group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-lowest group transition-colors">
+<td class="px-8 py-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Young professional woman of East Asian descent, stylish glasses, neutral studio lighting, high resolution portrait, confident expression, corporate headshot." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdXmaXNXCBMb1VxKUeH1vJqkhgrvyNUdD5q4xJjRlhHlCXBL3_FHyE1DqFJv4A2M0uozKGWcO8Om31XSDKJK0VgLBPuGf8TQql5xFfAINbUMtkQl07UJ3bm-L6onmajMcbzAn8K1-ZM0lY__FKc-tmbBfQLV-gBFjaa3du6QHQb4LzyBs95vl0YCyqAAdSOwHHptT3qLiqHYSHiuqFQCLzJwDzZp-UpwSNqKpcevKIIaD80wE6Y42C">
+</div>
+<div>
+<p class="font-headline-sm text-[16px] text-on-surface">Yuki Tanaka</p>
+<p class="text-label-sm text-on-surface-variant">ID: LA-2024-0012</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-6">
+<div class="space-y-1">
+<p class="text-body-md text-on-surface">y.tanaka@globalventures.jp</p>
+<p class="text-label-sm text-on-surface-variant font-mono">+81 90 1234 5678</p>
+</div>
+</td>
+<td class="px-6 py-6 text-center">
+<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/5 text-primary font-bold">03</span>
+</td>
+<td class="px-6 py-6">
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant text-label-sm rounded-full font-bold">STANDARD</span>
+</td>
+<td class="px-8 py-6 text-right">
+<a class="inline-flex items-center gap-1 text-primary font-label-md hover:underline decoration-2 underline-offset-4 group/link" href="#">
+                                    View Profile
+                                    <span class="material-symbols-outlined text-[18px] group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination -->
+<div class="px-8 py-6 bg-surface-container-low/30 border-t border-outline-variant flex items-center justify-between">
+<p class="text-label-md text-on-surface-variant">Showing <span class="font-bold text-on-surface">1 - 4</span> of 2,842 customers</p>
+<div class="flex items-center gap-2">
+<button class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high disabled:opacity-30" disabled="">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-10 h-10 rounded-full flex items-center justify-center bg-primary text-on-primary font-label-md">1</button>
+<button class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high font-label-md">2</button>
+<button class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high font-label-md">3</button>
+<span class="px-2 text-on-surface-variant">...</span>
+<button class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high font-label-md">711</button>
+<button class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Decorative Bottom Gradient -->
+<div class="fixed bottom-0 left-72 right-0 h-32 bg-gradient-to-t from-background to-transparent pointer-events-none z-10"></div>
+</div>
+<script>
+    // Micro-interaction: Search input focus animation
+    const searchInput = document.querySelector('input[type="text"]');
+    searchInput.addEventListener('focus', () => {
+        searchInput.parentElement.classList.add('scale-[1.02]');
+    });
+    searchInput.addEventListener('blur', () => {
+        searchInput.parentElement.classList.remove('scale-[1.02]');
+    });
+
+    // Simulated Table Row Hover Effect with JS for precision
+    const rows = document.querySelectorAll('tbody tr');
+    rows.forEach(row => {
+        row.addEventListener('mouseenter', () => {
+            row.style.boxShadow = 'inset 4px 0 0 0 #003c90';
+        });
+        row.addEventListener('mouseleave', () => {
+            row.style.boxShadow = 'none';
+        });
+    });
+</script></main></div>
+
+</body></html>

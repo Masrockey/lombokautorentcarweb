@@ -1,0 +1,333 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={theme:{extend:{"colors":{"outline":"#737784","surface-container":"#edeeef","tertiary-fixed-dim":"#c3c7cc","surface-variant":"#e1e3e4","on-secondary-container":"#693200","secondary-fixed":"#ffdcc6","on-surface":"#191c1d","secondary-fixed-dim":"#ffb785","on-primary-container":"#bcceff","surface-container-low":"#f3f4f5","error":"#ba1a1a","surface-bright":"#f8f9fa","secondary-container":"#fc9342","surface-container-highest":"#e1e3e4","primary-fixed":"#d9e2ff","primary":"#003c90","on-tertiary-fixed":"#181c20","inverse-surface":"#2e3132","on-error-container":"#93000a","primary-container":"#0f52ba","secondary":"#954a00","inverse-primary":"#b0c6ff","surface-tint":"#1d59c1","on-background":"#191c1d","surface-container-high":"#e7e8e9","on-surface-variant":"#434653","on-primary-fixed-variant":"#00419c","on-secondary":"#ffffff","on-secondary-fixed":"#301400","surface-container-lowest":"#ffffff","inverse-on-surface":"#f0f1f2","surface-dim":"#d9dadb","tertiary-fixed":"#e0e3e8","on-tertiary-fixed-variant":"#43474c","background":"#f8f9fa","primary-fixed-dim":"#b0c6ff","on-primary":"#ffffff","error-container":"#ffdad6","outline-variant":"#c3c6d5","on-tertiary":"#ffffff","tertiary-container":"#54585d","tertiary":"#3d4145","on-secondary-fixed-variant":"#713700","surface":"#f8f9fa","on-tertiary-container":"#cbced3","on-primary-fixed":"#001945","on-error":"#ffffff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-desktop":"40px","container-max":"1280px","margin-mobile":"16px","unit":"8px","gutter":"24px"},"fontFamily":{"display-lg-mobile":["Manrope"],"body-md":["Hanken Grotesk"],"label-md":["Hanken Grotesk"],"headline-sm":["Manrope"],"headline-md":["Manrope"],"label-sm":["Hanken Grotesk"],"display-lg":["Manrope"],"body-lg":["Hanken Grotesk"]},"fontSize":{"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.05em","fontWeight":"600"}],"headline-sm":["24px",{"lineHeight":"32px","fontWeight":"700"}],"headline-md":["32px",{"lineHeight":"40px","fontWeight":"700"}],"label-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Hanken+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"></head><body class="bg-background font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col shadow-[1px_0_8px_rgba(0,0,0,0.02)]"><div class="p-8 flex items-center gap-3"><img alt="logo lar.png" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLv6LGjSP8co3lKEukuonqv5wwJa2TjMf5BdN5Z0qjX85asAdMwRwXj5m5mRiBf1gJ68P8LRh2K3FFKD_KwW34KHCdZ3r_BO0zWW1l7eDLFSS5fup2eAnaZKbsih_IVmnGLGOEtA-X8fg2SHVt52o0XCG3cMLFVK19zUiV0QFUXien8u-z9aWBJGQWBWg7tJ3Ax7LIWaPnQ3AEE3fty4n9_2mvzvDOICbXXKa6BqctHcBykjbiz0Iz77A4HXGRjV48CUKMpdTly7hA"><span class="font-headline-sm text-primary">Lombok Auto</span></div><nav class="flex-1 px-4 space-y-1" data-active-classes="bg-primary-container text-on-primary-container font-bold shadow-md"><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="dashboard" href="#"><span class="material-symbols-outlined mr-3">dashboard</span>Dashboard</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="fleet-management" href="#"><span class="material-symbols-outlined mr-3">directions_car</span>Fleet Management</a><a aria-current="page" class="flex items-center px-4 py-3 rounded-xl transition-all group bg-primary-container text-on-primary-container font-bold shadow-md" data-path="booking-management" href="#"><span class="material-symbols-outlined mr-3">calendar_month</span>Bookings</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="customers" href="#"><span class="material-symbols-outlined mr-3">person</span>Customers</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="blog" href="#"><span class="material-symbols-outlined mr-3">newspaper</span>Blog</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="reports-analytics" href="#"><span class="material-symbols-outlined mr-3">bar_chart</span>Reports/Analytics</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="reports" href="#"><span class="material-symbols-outlined mr-3">analytics</span>Reports</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="settings" href="#"><span class="material-symbols-outlined mr-3">settings</span>Settings</a></nav><div class="p-4 mt-auto"><div class="bg-surface-container-low p-4 rounded-xl flex items-center gap-3"><img alt="Profile" class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLsam9tVljf682QFhyYNFpEiHUEF2q0tay3KY2esUqjUzkJ0MQYhmEfSRUkbzRbyXhevleaDcH8Ug1WWLhlyGc_dUTJsMIpVtwIQCCozLPn4xQX_TmZlwEZP8D40NhlFX2cKLDIRdk0-LYeTbe4UndEYTWKYy3PJNPVCseeb08IrZoX3T4NykEwCtez1YcUUGbrBBn3RhpWw4M-zbnRAPNLik7jJZcqcM-5Bqtj0g1u1rO2uJ3PCWBXdCoM"><div class="overflow-hidden"><p class="text-label-md text-on-surface truncate">Admin User</p><p class="text-label-sm text-on-surface-variant truncate">admin@lombokauto.com</p></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/80 backdrop-blur-xl z-40 px-8 flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex-1 max-w-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant">search</span><input class="w-full bg-surface-container-low border-none rounded-full py-2.5 pl-11 pr-4 text-sm focus:ring-2 focus:ring-primary/20" placeholder="Search bookings, vehicles..." type="text"></div></div><div class="flex items-center gap-6"><button class="relative p-2 text-on-surface-variant hover:bg-surface-container-high rounded-full transition-colors"><span class="material-symbols-outlined">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-error rounded-full ring-2 ring-surface"></span></button><div class="h-8 w-[1px] bg-outline-variant"></div><div class="flex items-center gap-3 cursor-pointer group"><span class="text-label-md text-on-surface group-hover:text-primary transition-colors">Super Admin</span><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant" src="https://lh3.googleusercontent.com/aida/AP1WRLsam9tVljf682QFhyYNFpEiHUEF2q0tay3KY2esUqjUzkJ0MQYhmEfSRUkbzRbyXhevleaDcH8Ug1WWLhlyGc_dUTJsMIpVtwIQCCozLPn4xQX_TmZlwEZP8D40NhlFX2cKLDIRdk0-LYeTbe4UndEYTWKYy3PJNPVCseeb08IrZoX3T4NykEwCtez1YcUUGbrBBn3RhpWw4M-zbnRAPNLik7jJZcqcM-5Bqtj0g1u1rO2uJ3PCWBXdCoM"></div></div></header><main class="relative pt-20 bg-background min-h-screen"><div class="flex flex-col w-full p-8 gap-8">
+<!-- Header & Stats Overview -->
+<div class="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-6">
+<div class="space-y-2">
+<div class="flex items-center gap-2 text-primary font-label-md uppercase tracking-widest">
+<span class="w-8 h-[2px] bg-primary"></span>
+        Operations Hub
+      </div>
+<h1 class="font-display-lg text-display-lg text-on-surface">Booking Management</h1>
+<p class="font-body-lg text-on-surface-variant max-w-xl">Oversee your fleet's schedule, manage client reservations, and optimize your high-season availability in one centralized console.</p>
+</div>
+<div class="flex gap-4">
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm min-w-[160px] flex flex-col gap-1 group hover:shadow-md transition-shadow cursor-default">
+<span class="text-label-sm text-on-surface-variant uppercase">Active Today</span>
+<span class="text-headline-md text-primary font-bold">24</span>
+<div class="w-full h-1 bg-surface-container rounded-full mt-2 overflow-hidden">
+<div class="bg-primary h-full w-[65%] rounded-full"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm min-w-[160px] flex flex-col gap-1 group hover:shadow-md transition-shadow cursor-default">
+<span class="text-label-sm text-on-surface-variant uppercase">New Requests</span>
+<span class="text-headline-md text-secondary font-bold">08</span>
+<div class="flex items-center gap-1 text-on-secondary-container text-[10px] font-bold bg-secondary-fixed px-2 py-0.5 rounded-full mt-2 w-fit">
+<span class="material-symbols-outlined text-[12px]">trending_up</span> 12%
+        </div>
+</div>
+</div>
+</div>
+<!-- Filters Bar -->
+<div class="bg-surface-container-low p-2 rounded-2xl flex flex-wrap items-center justify-between gap-4">
+<div class="flex flex-wrap items-center gap-2">
+<div class="relative group">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-on-surface-variant text-sm">calendar_today</span>
+<select class="appearance-none bg-surface-container-lowest font-label-md text-on-surface pl-10 pr-10 py-3 rounded-xl focus:ring-2 focus:ring-primary/20 outline-none cursor-pointer">
+<option>All Dates</option>
+<option>Next 7 Days</option>
+<option>Next 30 Days</option>
+<option>Custom Range</option>
+</select>
+<span class="absolute right-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<div class="relative group">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-on-surface-variant text-sm">filter_list</span>
+<select class="appearance-none bg-surface-container-lowest font-label-md text-on-surface pl-10 pr-10 py-3 rounded-xl focus:ring-2 focus:ring-primary/20 outline-none cursor-pointer">
+<option>All Statuses</option>
+<option>Confirmed</option>
+<option>Pending</option>
+<option>In Progress</option>
+<option>Completed</option>
+<option>Cancelled</option>
+</select>
+<span class="absolute right-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<button class="bg-surface-container-high px-6 py-3 rounded-xl font-label-md text-on-surface-variant hover:bg-surface-container-highest transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">sort</span> Sort By
+      </button>
+</div>
+<div class="flex items-center gap-3 pr-2">
+<button class="bg-primary text-on-primary px-6 py-3 rounded-xl font-label-md hover:shadow-lg hover:shadow-primary/20 transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">add</span> New Reservation
+      </button>
+</div>
+</div>
+<!-- Table Section -->
+<div class="bg-surface-container-lowest rounded-3xl shadow-sm overflow-hidden border border-surface-variant">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low/50">
+<th class="px-8 py-5 font-label-md text-on-surface-variant uppercase tracking-wider text-[11px]">Booking ID</th>
+<th class="px-6 py-5 font-label-md text-on-surface-variant uppercase tracking-wider text-[11px]">Customer</th>
+<th class="px-6 py-5 font-label-md text-on-surface-variant uppercase tracking-wider text-[11px]">Vehicle</th>
+<th class="px-6 py-5 font-label-md text-on-surface-variant uppercase tracking-wider text-[11px]">Schedule</th>
+<th class="px-6 py-5 font-label-md text-on-surface-variant uppercase tracking-wider text-[11px]">Total</th>
+<th class="px-6 py-5 font-label-md text-on-surface-variant uppercase tracking-wider text-[11px]">Status</th>
+<th class="px-8 py-5 font-label-md text-on-surface-variant uppercase tracking-wider text-[11px] text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-variant">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-bright transition-colors group">
+<td class="px-8 py-6">
+<span class="font-mono text-sm text-primary font-bold">#LBT-8821</span>
+</td>
+<td class="px-6 py-6">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary font-bold">AS</div>
+<div class="flex flex-col">
+<span class="font-label-md text-on-surface">Alexander Smith</span>
+<span class="text-[12px] text-on-surface-variant">smith.alex@gmail.com</span>
+</div>
+</div>
+</td>
+<td class="px-6 py-6">
+<div class="flex flex-col">
+<span class="font-label-md text-on-surface">Toyota Fortuner 4x4</span>
+<span class="text-[12px] text-on-surface-variant">Premium Class • White</span>
+</div>
+</td>
+<td class="px-6 py-6">
+<div class="flex items-center gap-4">
+<div class="flex flex-col">
+<span class="text-[12px] uppercase text-on-surface-variant font-bold">Pick-up</span>
+<span class="text-sm font-label-md">Oct 24, 09:00</span>
+</div>
+<span class="material-symbols-outlined text-surface-variant">arrow_forward</span>
+<div class="flex flex-col">
+<span class="text-[12px] uppercase text-on-surface-variant font-bold">Return</span>
+<span class="text-sm font-label-md">Oct 28, 18:00</span>
+</div>
+</div>
+</td>
+<td class="px-6 py-6 font-label-md text-on-surface text-lg">
+              $450.00
+            </td>
+<td class="px-6 py-6">
+<span class="px-3 py-1.5 rounded-full bg-primary-container text-on-primary-container text-[11px] font-bold uppercase">Confirmed</span>
+</td>
+<td class="px-8 py-6 text-right">
+<div class="flex items-center justify-end gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="p-2 text-on-surface-variant hover:text-primary hover:bg-primary/10 rounded-lg transition-all" title="View Details">
+<span class="material-symbols-outlined">visibility</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-primary hover:bg-primary/10 rounded-lg transition-all" title="Edit Booking">
+<span class="material-symbols-outlined">edit</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-error hover:bg-error/10 rounded-lg transition-all" title="Cancel Reservation">
+<span class="material-symbols-outlined">cancel</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-bright transition-colors group">
+<td class="px-8 py-6">
+<span class="font-mono text-sm text-primary font-bold">#LBT-8822</span>
+</td>
+<td class="px-6 py-6">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary font-bold">EP</div>
+<div class="flex flex-col">
+<span class="font-label-md text-on-surface">Elena Petrov</span>
+<span class="text-[12px] text-on-surface-variant">elena.p@voyage.ru</span>
+</div>
+</div>
+</td>
+<td class="px-6 py-6">
+<div class="flex flex-col">
+<span class="font-label-md text-on-surface">Honda HR-V</span>
+<span class="text-[12px] text-on-surface-variant">Standard • Silver Metallic</span>
+</div>
+</td>
+<td class="px-6 py-6">
+<div class="flex items-center gap-4">
+<div class="flex flex-col">
+<span class="text-[12px] uppercase text-on-surface-variant font-bold">Pick-up</span>
+<span class="text-sm font-label-md">Oct 25, 10:30</span>
+</div>
+<span class="material-symbols-outlined text-surface-variant">arrow_forward</span>
+<div class="flex flex-col">
+<span class="text-[12px] uppercase text-on-surface-variant font-bold">Return</span>
+<span class="text-sm font-label-md">Oct 27, 10:30</span>
+</div>
+</div>
+</td>
+<td class="px-6 py-6 font-label-md text-on-surface text-lg">
+              $180.00
+            </td>
+<td class="px-6 py-6">
+<span class="px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-[11px] font-bold uppercase">Pending</span>
+</td>
+<td class="px-8 py-6 text-right">
+<div class="flex items-center justify-end gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="p-2 text-on-surface-variant hover:text-primary hover:bg-primary/10 rounded-lg"><span class="material-symbols-outlined">visibility</span></button>
+<button class="p-2 text-on-surface-variant hover:text-primary hover:bg-primary/10 rounded-lg"><span class="material-symbols-outlined">edit</span></button>
+<button class="p-2 text-on-surface-variant hover:text-error hover:bg-error/10 rounded-lg"><span class="material-symbols-outlined">cancel</span></button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-bright transition-colors group">
+<td class="px-8 py-6">
+<span class="font-mono text-sm text-primary font-bold">#LBT-8823</span>
+</td>
+<td class="px-6 py-6">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary font-bold">MK</div>
+<div class="flex flex-col">
+<span class="font-label-md text-on-surface">Markus Klee</span>
+<span class="text-[12px] text-on-surface-variant">klee.m@berlin-tech.de</span>
+</div>
+</div>
+</td>
+<td class="px-6 py-6">
+<div class="flex flex-col">
+<span class="font-label-md text-on-surface">Mitsubishi Pajero Sport</span>
+<span class="text-[12px] text-on-surface-variant">Luxury SUV • Black Pearl</span>
+</div>
+</td>
+<td class="px-6 py-6">
+<div class="flex items-center gap-4">
+<div class="flex flex-col">
+<span class="text-[12px] uppercase text-on-surface-variant font-bold">Pick-up</span>
+<span class="text-sm font-label-md">Oct 26, 08:00</span>
+</div>
+<span class="material-symbols-outlined text-surface-variant">arrow_forward</span>
+<div class="flex flex-col">
+<span class="text-[12px] uppercase text-on-surface-variant font-bold">Return</span>
+<span class="text-sm font-label-md">Oct 30, 08:00</span>
+</div>
+</div>
+</td>
+<td class="px-6 py-6 font-label-md text-on-surface text-lg">
+              $520.00
+            </td>
+<td class="px-6 py-6">
+<span class="px-3 py-1.5 rounded-full bg-surface-container-highest text-on-surface-variant text-[11px] font-bold uppercase">In Progress</span>
+</td>
+<td class="px-8 py-6 text-right">
+<div class="flex items-center justify-end gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="p-2 text-on-surface-variant hover:text-primary hover:bg-primary/10 rounded-lg"><span class="material-symbols-outlined">visibility</span></button>
+<button class="p-2 text-on-surface-variant hover:text-primary hover:bg-primary/10 rounded-lg"><span class="material-symbols-outlined">edit</span></button>
+<button class="p-2 text-on-surface-variant hover:text-error hover:bg-error/10 rounded-lg"><span class="material-symbols-outlined">cancel</span></button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-bright transition-colors group">
+<td class="px-8 py-6">
+<span class="font-mono text-sm text-primary font-bold">#LBT-8824</span>
+</td>
+<td class="px-6 py-6">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary font-bold">JL</div>
+<div class="flex flex-col">
+<span class="font-label-md text-on-surface">Jessica Loh</span>
+<span class="text-[12px] text-on-surface-variant">j.loh@star.sg</span>
+</div>
+</div>
+</td>
+<td class="px-6 py-6">
+<div class="flex flex-col">
+<span class="font-label-md text-on-surface">Toyota Veloz</span>
+<span class="text-[12px] text-on-surface-variant">Family • Red Mica</span>
+</div>
+</td>
+<td class="px-6 py-6">
+<div class="flex items-center gap-4">
+<div class="flex flex-col">
+<span class="text-[12px] uppercase text-on-surface-variant font-bold">Pick-up</span>
+<span class="text-sm font-label-md">Oct 26, 14:00</span>
+</div>
+<span class="material-symbols-outlined text-surface-variant">arrow_forward</span>
+<div class="flex flex-col">
+<span class="text-[12px] uppercase text-on-surface-variant font-bold">Return</span>
+<span class="text-sm font-label-md">Oct 29, 14:00</span>
+</div>
+</div>
+</td>
+<td class="px-6 py-6 font-label-md text-on-surface text-lg">
+              $210.00
+            </td>
+<td class="px-6 py-6">
+<span class="px-3 py-1.5 rounded-full bg-error-container text-on-error-container text-[11px] font-bold uppercase">Cancelled</span>
+</td>
+<td class="px-8 py-6 text-right">
+<div class="flex items-center justify-end gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="p-2 text-on-surface-variant hover:text-primary hover:bg-primary/10 rounded-lg"><span class="material-symbols-outlined">visibility</span></button>
+<button class="p-2 text-on-surface-variant hover:text-primary hover:bg-primary/10 rounded-lg"><span class="material-symbols-outlined">edit</span></button>
+<button class="p-2 text-on-surface-variant hover:text-error hover:bg-error/10 rounded-lg"><span class="material-symbols-outlined">cancel</span></button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination -->
+<div class="px-8 py-4 bg-surface-container-low/30 flex items-center justify-between border-t border-surface-variant">
+<span class="text-label-sm text-on-surface-variant font-medium tracking-wide">SHOWING 4 OF 128 RESERVATIONS</span>
+<div class="flex items-center gap-1">
+<button class="p-2 rounded-lg hover:bg-surface-container text-on-surface-variant disabled:opacity-30" disabled="">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-8 h-8 flex items-center justify-center rounded-lg bg-primary text-on-primary font-bold text-sm">1</button>
+<button class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-surface-container text-on-surface-variant text-sm">2</button>
+<button class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-surface-container text-on-surface-variant text-sm">3</button>
+<button class="p-2 rounded-lg hover:bg-surface-container text-on-surface-variant">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Footer Decor -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-4">
+<div class="lg:col-span-2 relative h-48 rounded-3xl overflow-hidden bg-primary overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent z-10 p-8 flex flex-col justify-center">
+<h3 class="text-headline-sm text-on-primary mb-2">Fleet Availability Preview</h3>
+<p class="text-on-primary/80 max-w-sm mb-4">View your current vehicle status across all Lombok branches in real-time.</p>
+<button class="w-fit px-6 py-2 bg-on-primary text-primary font-label-md rounded-xl hover:scale-105 transition-transform">Explore Fleet Grid</button>
+</div>
+<div class="absolute right-0 top-0 h-full w-2/3 bg-cover bg-center" data-alt="A cinematic, high-contrast shot of several premium SUVs parked in a row on a luxury villa driveway in Lombok, Indonesia. The golden hour sunset reflects off the polished car bodies. Modern tropical architecture and palm trees are visible in the background, conveying a high-end travel experience." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAZTydbalnhwvyzA2UmuUyLoLWayzf-zEihtPSNSKz8Lf22dvDJ3i7L2xVqEU285eBMq8q3imaui_mRQfwpNDCl-prFjHvNnrFxqDYdo3CU-e5tKq7lOew4S7eF7bZmW_MgELDAyxQrI4hMMOwJwVnRWwqYq7nxYj-7DLuYfEmCD_CRckr2psFbWCYRU3021Uw6Vk-GxXFsJqdRDHoojumXuuC3kJzQtov0DmxvJWd_MggiuvXnn3hz')"></div>
+</div>
+<div class="bg-surface-container-high rounded-3xl p-8 flex flex-col justify-between">
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">info</span>
+<span class="font-label-md text-on-surface">System Updates</span>
+</div>
+<p class="text-label-sm text-on-surface-variant leading-relaxed">
+                Holiday season surcharge (+15%) will be automatically applied to all new bookings for December 15th onwards.
+            </p>
+</div>
+<a class="text-primary font-bold text-sm flex items-center gap-1 group" href="#">
+            Review Pricing Policy
+            <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for the search highlight
+  document.querySelectorAll('tr').forEach(row => {
+    row.addEventListener('click', (e) => {
+      if(!e.target.closest('button')) {
+        // Toggle highlight effect or navigate
+        console.log('Row clicked');
+      }
+    });
+  });
+</script></main></div>
+
+</body></html>

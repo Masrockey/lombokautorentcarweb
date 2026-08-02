@@ -1,0 +1,385 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={theme:{extend:{"colors":{"outline":"#737784","surface-container":"#edeeef","tertiary-fixed-dim":"#c3c7cc","surface-variant":"#e1e3e4","on-secondary-container":"#693200","secondary-fixed":"#ffdcc6","on-surface":"#191c1d","secondary-fixed-dim":"#ffb785","on-primary-container":"#bcceff","surface-container-low":"#f3f4f5","error":"#ba1a1a","surface-bright":"#f8f9fa","secondary-container":"#fc9342","surface-container-highest":"#e1e3e4","primary-fixed":"#d9e2ff","primary":"#003c90","on-tertiary-fixed":"#181c20","inverse-surface":"#2e3132","on-error-container":"#93000a","primary-container":"#0f52ba","secondary":"#954a00","inverse-primary":"#b0c6ff","surface-tint":"#1d59c1","on-background":"#191c1d","surface-container-high":"#e7e8e9","on-surface-variant":"#434653","on-primary-fixed-variant":"#00419c","on-secondary":"#ffffff","on-secondary-fixed":"#301400","surface-container-lowest":"#ffffff","inverse-on-surface":"#f0f1f2","surface-dim":"#d9dadb","tertiary-fixed":"#e0e3e8","on-tertiary-fixed-variant":"#43474c","background":"#f8f9fa","primary-fixed-dim":"#b0c6ff","on-primary":"#ffffff","error-container":"#ffdad6","outline-variant":"#c3c6d5","on-tertiary":"#ffffff","tertiary-container":"#54585d","tertiary":"#3d4145","on-secondary-fixed-variant":"#713700","surface":"#f8f9fa","on-tertiary-container":"#cbced3","on-primary-fixed":"#001945","on-error":"#ffffff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-desktop":"40px","container-max":"1280px","margin-mobile":"16px","unit":"8px","gutter":"24px"},"fontFamily":{"display-lg-mobile":["Manrope"],"body-md":["Hanken Grotesk"],"label-md":["Hanken Grotesk"],"headline-sm":["Manrope"],"headline-md":["Manrope"],"label-sm":["Hanken Grotesk"],"display-lg":["Manrope"],"body-lg":["Hanken Grotesk"]},"fontSize":{"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.05em","fontWeight":"600"}],"headline-sm":["24px",{"lineHeight":"32px","fontWeight":"700"}],"headline-md":["32px",{"lineHeight":"40px","fontWeight":"700"}],"label-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Hanken+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"></head><body class="bg-background font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col shadow-[1px_0_8px_rgba(0,0,0,0.02)]"><div class="p-8 flex items-center gap-3"><img alt="logo lar.png" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLv6LGjSP8co3lKEukuonqv5wwJa2TjMf5BdN5Z0qjX85asAdMwRwXj5m5mRiBf1gJ68P8LRh2K3FFKD_KwW34KHCdZ3r_BO0zWW1l7eDLFSS5fup2eAnaZKbsih_IVmnGLGOEtA-X8fg2SHVt52o0XCG3cMLFVK19zUiV0QFUXien8u-z9aWBJGQWBWg7tJ3Ax7LIWaPnQ3AEE3fty4n9_2mvzvDOICbXXKa6BqctHcBykjbiz0Iz77A4HXGRjV48CUKMpdTly7hA"><span class="font-headline-sm text-primary">Lombok Auto</span></div><nav class="flex-1 px-4 space-y-1" data-active-classes="bg-primary-container text-on-primary-container font-bold shadow-md"><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="dashboard" href="#"><span class="material-symbols-outlined mr-3">dashboard</span>Dashboard</a><a aria-current="page" class="flex items-center px-4 py-3 rounded-xl transition-all group bg-primary-container text-on-primary-container font-bold shadow-md" data-path="fleet-management" href="#"><span class="material-symbols-outlined mr-3">directions_car</span>Fleet Management</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="booking-management" href="#"><span class="material-symbols-outlined mr-3">calendar_month</span>Bookings</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="customers" href="#"><span class="material-symbols-outlined mr-3">person</span>Customers</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="blog" href="#"><span class="material-symbols-outlined mr-3">newspaper</span>Blog</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="reports-analytics" href="#"><span class="material-symbols-outlined mr-3">bar_chart</span>Reports/Analytics</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="reports" href="#"><span class="material-symbols-outlined mr-3">analytics</span>Reports</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="settings" href="#"><span class="material-symbols-outlined mr-3">settings</span>Settings</a></nav><div class="p-4 mt-auto"><div class="bg-surface-container-low p-4 rounded-xl flex items-center gap-3"><img alt="Profile" class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLsam9tVljf682QFhyYNFpEiHUEF2q0tay3KY2esUqjUzkJ0MQYhmEfSRUkbzRbyXhevleaDcH8Ug1WWLhlyGc_dUTJsMIpVtwIQCCozLPn4xQX_TmZlwEZP8D40NhlFX2cKLDIRdk0-LYeTbe4UndEYTWKYy3PJNPVCseeb08IrZoX3T4NykEwCtez1YcUUGbrBBn3RhpWw4M-zbnRAPNLik7jJZcqcM-5Bqtj0g1u1rO2uJ3PCWBXdCoM"><div class="overflow-hidden"><p class="text-label-md text-on-surface truncate">Admin User</p><p class="text-label-sm text-on-surface-variant truncate">admin@lombokauto.com</p></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/80 backdrop-blur-xl z-40 px-8 flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex-1 max-w-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant">search</span><input class="w-full bg-surface-container-low border-none rounded-full py-2.5 pl-11 pr-4 text-sm focus:ring-2 focus:ring-primary/20" placeholder="Search bookings, vehicles..." type="text"></div></div><div class="flex items-center gap-6"><button class="relative p-2 text-on-surface-variant hover:bg-surface-container-high rounded-full transition-colors"><span class="material-symbols-outlined">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-error rounded-full ring-2 ring-surface"></span></button><div class="h-8 w-[1px] bg-outline-variant"></div><div class="flex items-center gap-3 cursor-pointer group"><span class="text-label-md text-on-surface group-hover:text-primary transition-colors">Super Admin</span><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant" src="https://lh3.googleusercontent.com/aida/AP1WRLsam9tVljf682QFhyYNFpEiHUEF2q0tay3KY2esUqjUzkJ0MQYhmEfSRUkbzRbyXhevleaDcH8Ug1WWLhlyGc_dUTJsMIpVtwIQCCozLPn4xQX_TmZlwEZP8D40NhlFX2cKLDIRdk0-LYeTbe4UndEYTWKYy3PJNPVCseeb08IrZoX3T4NykEwCtez1YcUUGbrBBn3RhpWw4M-zbnRAPNLik7jJZcqcM-5Bqtj0g1u1rO2uJ3PCWBXdCoM"></div></div></header><main class="relative pt-20 bg-background min-h-screen"><div class="flex flex-col w-full p-8 gap-8">
+<!-- Header Section: Stat Cards & Actions -->
+<div class="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-6">
+<div class="space-y-2">
+<p class="font-label-md text-primary tracking-widest uppercase">Operational Overview</p>
+<h1 class="font-display-lg text-on-surface">Fleet Management</h1>
+<p class="font-body-lg text-on-surface-variant max-w-xl">Monitor and manage your premium vehicle collection across Lombok's key service hubs.</p>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex items-center gap-2 px-6 py-3 bg-surface-container-high text-on-surface font-label-md rounded-full hover:bg-surface-container-highest transition-all">
+<span class="material-symbols-outlined text-[20px]">download</span>
+                Export Report
+            </button>
+<button class="flex items-center gap-2 px-8 py-3 bg-primary text-on-primary font-label-md rounded-full shadow-xl shadow-primary/20 hover:scale-[1.02] active:scale-[0.98] transition-all">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+                Add New Vehicle
+            </button>
+</div>
+</div>
+<!-- Analytics Quick-View -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm space-y-4">
+<div class="flex justify-between items-start">
+<div class="p-3 bg-primary/10 rounded-xl">
+<span class="material-symbols-outlined text-primary">directions_car</span>
+</div>
+<span class="text-label-sm text-on-surface-variant bg-surface-container px-2 py-1 rounded">Total</span>
+</div>
+<div>
+<p class="text-display-lg font-display-lg text-on-surface">42</p>
+<p class="text-label-md text-on-surface-variant">Active Fleet Units</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm space-y-4">
+<div class="flex justify-between items-start">
+<div class="p-3 bg-secondary/10 rounded-xl">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+</div>
+<span class="text-label-sm text-on-secondary-container bg-secondary-fixed px-2 py-1 rounded">84%</span>
+</div>
+<div>
+<p class="text-display-lg font-display-lg text-on-surface">35</p>
+<p class="text-label-md text-on-surface-variant">Available Now</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm space-y-4">
+<div class="flex justify-between items-start">
+<div class="p-3 bg-on-secondary-container/10 rounded-xl">
+<span class="material-symbols-outlined text-on-secondary-container">construction</span>
+</div>
+<span class="text-label-sm text-error bg-error-container px-2 py-1 rounded">Critical</span>
+</div>
+<div>
+<p class="text-display-lg font-display-lg text-on-surface">3</p>
+<p class="text-label-md text-on-surface-variant">In Maintenance</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm space-y-4">
+<div class="flex justify-between items-start">
+<div class="p-3 bg-tertiary/10 rounded-xl">
+<span class="material-symbols-outlined text-tertiary">trending_up</span>
+</div>
+<span class="text-label-sm text-on-tertiary-fixed-variant bg-tertiary-fixed px-2 py-1 rounded">+12%</span>
+</div>
+<div>
+<p class="text-display-lg font-display-lg text-on-surface">92%</p>
+<p class="text-label-md text-on-surface-variant">Utilization Rate</p>
+</div>
+</div>
+</div>
+<!-- Filters & Search Bar -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm flex flex-col md:flex-row items-center gap-4">
+<div class="relative flex-1 w-full">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="w-full pl-12 pr-4 py-3 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary/20 transition-all outline-none" placeholder="Search by model, plate, or category..." type="text">
+</div>
+<div class="flex items-center gap-2 w-full md:w-auto overflow-x-auto pb-2 md:pb-0">
+<button class="px-4 py-2 bg-primary text-on-primary rounded-lg text-label-md whitespace-nowrap">All Vehicles</button>
+<button class="px-4 py-2 hover:bg-surface-container text-on-surface-variant rounded-lg text-label-md whitespace-nowrap">Luxury SUV</button>
+<button class="px-4 py-2 hover:bg-surface-container text-on-surface-variant rounded-lg text-label-md whitespace-nowrap">Electric</button>
+<button class="px-4 py-2 hover:bg-surface-container text-on-surface-variant rounded-lg text-label-md whitespace-nowrap">MPV Family</button>
+<div class="h-6 w-[1px] bg-outline-variant mx-2"></div>
+<button class="p-2 text-on-surface-variant hover:bg-surface-container rounded-lg">
+<span class="material-symbols-outlined">filter_list</span>
+</button>
+</div>
+</div>
+<!-- Fleet Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+<!-- Vehicle Card 1 -->
+<div class="group bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-transparent hover:border-primary/10">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A professional studio photograph of a white 2024 Toyota Alphard Luxury MPV, clean minimalist lighting, dark background emphasizing the chrome grill and elegant body lines. High-end automotive photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcQtJvVPmlm5lcRzoENErnnBh36MRnvNwpNI29qzkdWQD4qqFYyPELPLFNnau67-zE2UgT9cn161sQ8_jI-B9UUna5_Zvs_t0zI_HiisGQYrREr94LIVEQD2RfpW-jrgu3aEl3WqSxsdxBLpv25lSOg7pa4bioGnWJVA2VrmNNx-ecVPXT-MV8k4f1QAQHYY1OQ3LE3BoositSv8Rhqdl7oKTnkkiQGdEcWSr1uRvDJoiJifNvAmeC">
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-label-sm font-bold text-primary flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                    AVAILABLE
+                </div>
+<div class="absolute bottom-4 left-4 bg-on-surface/80 backdrop-blur-md px-3 py-1 rounded-lg text-white text-label-sm">
+                    Luxury MPV
+                </div>
+</div>
+<div class="p-6 space-y-6">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-sm text-on-surface">Toyota Alphard Gen 4</h3>
+<p class="font-label-md text-on-surface-variant">DR 1288 LA · 2024 Model</p>
+</div>
+<div class="text-right">
+<p class="text-label-sm text-on-surface-variant uppercase tracking-tighter">Daily Rate</p>
+<p class="text-headline-sm text-primary font-bold">IDR 2.8M</p>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-4 py-4 border-y border-outline-variant">
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-on-surface-variant">person</span>
+<span class="text-label-sm text-on-surface">7 Seats</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-on-surface-variant">settings_input_component</span>
+<span class="text-label-sm text-on-surface">Auto</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-on-surface-variant">ev_station</span>
+<span class="text-label-sm text-on-surface">Hybrid</span>
+</div>
+</div>
+<div class="flex gap-3">
+<button class="flex-1 py-3 bg-surface-container-low text-on-surface font-label-md rounded-xl hover:bg-surface-container-high transition-colors">Edit Details</button>
+<button class="px-4 py-3 bg-primary/5 text-primary rounded-xl hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined">more_horiz</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Vehicle Card 2 -->
+<div class="group bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A sleek black Mitsubishi Pajero Sport Dakar 4x4 parked on a scenic Lombok coastal road during golden hour. The setting sun reflects off the metallic finish. Rugged yet sophisticated aesthetic, premium SUV focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDnegy1ADBAGk0eGQRm9vR8dRJaqLs9hq5rqJNP6DXC83pQtfSUQk5jtfnlevSiqm2rMobUcyUDBu0v2OgpOTG6RHdNmaBNf4XdMMgLQ7looHZuG9_ev3qhqc3QK-PzRtYRCpl9_fV7vVCe5FKRmJi5yVUdFxrJRRWh46hQRLh2Zf4_u08wUIzY4RrJ-4nVm83PL7kwWWq_824vEl_iwm71OcnGGfsAjol-Yxe45Tn614c7H98Q3WQ">
+<div class="absolute top-4 right-4 bg-on-secondary-container/90 backdrop-blur-md px-3 py-1 rounded-full text-label-sm font-bold text-white flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+                    RENTED
+                </div>
+<div class="absolute bottom-4 left-4 bg-on-surface/80 backdrop-blur-md px-3 py-1 rounded-lg text-white text-label-sm">
+                    Luxury SUV
+                </div>
+</div>
+<div class="p-6 space-y-6">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-sm text-on-surface">Mitsubishi Pajero Sport</h3>
+<p class="font-label-md text-on-surface-variant">DR 9900 AB · 2023 Model</p>
+</div>
+<div class="text-right">
+<p class="text-label-sm text-on-surface-variant uppercase tracking-tighter">Daily Rate</p>
+<p class="text-headline-sm text-primary font-bold">IDR 1.2M</p>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-4 py-4 border-y border-outline-variant">
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-on-surface-variant">person</span>
+<span class="text-label-sm text-on-surface">7 Seats</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-on-surface-variant">settings_input_component</span>
+<span class="text-label-sm text-on-surface">Auto</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-on-surface-variant">local_gas_station</span>
+<span class="text-label-sm text-on-surface">Diesel</span>
+</div>
+</div>
+<div class="p-4 bg-surface-container-low rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-outline-variant overflow-hidden">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLsam9tVljf682QFhyYNFpEiHUEF2q0tay3KY2esUqjUzkJ0MQYhmEfSRUkbzRbyXhevleaDcH8Ug1WWLhlyGc_dUTJsMIpVtwIQCCozLPn4xQX_TmZlwEZP8D40NhlFX2cKLDIRdk0-LYeTbe4UndEYTWKYy3PJNPVCseeb08IrZoX3T4NykEwCtez1YcUUGbrBBn3RhpWw4M-zbnRAPNLik7jJZcqcM-5Bqtj0g1u1rO2uJ3PCWBXdCoM">
+</div>
+<div class="text-label-sm">
+<p class="text-on-surface font-bold">James Wilson</p>
+<p class="text-on-surface-variant">Return: Oct 14</p>
+</div>
+</div>
+<button class="text-primary text-label-sm font-bold hover:underline">Track GPS</button>
+</div>
+</div>
+</div>
+<!-- Vehicle Card 3 -->
+<div class="group bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 opacity-80 grayscale-[0.5]">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A silver 2023 Hyundai IONIQ 5 electric car in a modern high-tech service bay with bright white LED panels. The car is partially lifted on a hydraulic jack for tire rotation. Cinematic industrial lighting, clean and professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMD6_e_VRC6o8aX-rY67gi-OE5nxw3osNgchBHHNbQ9xBzEWjm8GFPoiAk6-BbcHFPrCesI8u0mpm99MUbAWsojP23YVYe8E4M0f3n00kWDSh-2JJyGbtYJRarFG7GWHtXhLQJTP3M-yGwYO0YReXCtLmk-Kcx96NsK5OF7We5U_wdmN6r-rD-R7Sa1mNTlKFXhmhN9drIeBkVImMZi43d7YIOipzpvGmnmHNd73XPMC_MxdQV8wHm">
+<div class="absolute top-4 right-4 bg-error/90 backdrop-blur-md px-3 py-1 rounded-full text-label-sm font-bold text-white flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">engineering</span>
+                    MAINTENANCE
+                </div>
+<div class="absolute bottom-4 left-4 bg-on-surface/80 backdrop-blur-md px-3 py-1 rounded-lg text-white text-label-sm">
+                    Electric Premium
+                </div>
+</div>
+<div class="p-6 space-y-6">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-sm text-on-surface">Hyundai IONIQ 5</h3>
+<p class="font-label-md text-on-surface-variant">DR 4433 EV · 2023 Model</p>
+</div>
+<div class="text-right">
+<p class="text-label-sm text-on-surface-variant uppercase tracking-tighter">Daily Rate</p>
+<p class="text-headline-sm text-primary font-bold">IDR 1.5M</p>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-4 py-4 border-y border-outline-variant">
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-on-surface-variant">person</span>
+<span class="text-label-sm text-on-surface">5 Seats</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-on-surface-variant">bolt</span>
+<span class="text-label-sm text-on-surface">EV</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-on-surface-variant">battery_charging_80</span>
+<span class="text-label-sm text-on-surface">82%</span>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-label-sm">
+<span class="text-on-surface-variant">Service Progress</span>
+<span class="text-error font-bold">Overdue 2 days</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="w-[65%] h-full bg-error rounded-full"></div>
+</div>
+</div>
+<button class="w-full py-3 bg-surface-container-high text-on-surface font-label-md rounded-xl hover:bg-surface-container-highest transition-colors">View Service Log</button>
+</div>
+</div>
+</div>
+<!-- Inventory Table (Alternative View) -->
+<div class="bg-surface-container-lowest rounded-3xl shadow-sm overflow-hidden border border-outline-variant/30">
+<div class="p-6 border-b border-outline-variant/30 flex justify-between items-center">
+<h2 class="font-headline-sm text-on-surface">Fleet Inventory List</h2>
+<div class="flex gap-2">
+<button class="p-2 hover:bg-surface-container rounded-lg transition-colors"><span class="material-symbols-outlined">grid_view</span></button>
+<button class="p-2 bg-primary/10 text-primary rounded-lg transition-colors"><span class="material-symbols-outlined">list</span></button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-label-sm text-on-surface-variant uppercase tracking-widest">
+<th class="px-6 py-4 font-semibold">Vehicle</th>
+<th class="px-6 py-4 font-semibold">Category</th>
+<th class="px-6 py-4 font-semibold">Plate Number</th>
+<th class="px-6 py-4 font-semibold">Status</th>
+<th class="px-6 py-4 font-semibold">Fuel/Charge</th>
+<th class="px-6 py-4 font-semibold text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/20">
+<tr class="hover:bg-surface-container-lowest/50 transition-colors">
+<td class="px-6 py-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Small thumbnail of a white Toyota Alphard." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrrzmiTouTC_ekOjM3Xsp4XXzVhakWwqEucJzgwuI0mbHVgSytsKwX78B3MgbMlKfWv5ZmphXobU_y81r2yYD1h857gslvhRgVdaCXfbq0ZaNgs2h1sAJlc_zFKOU0XKCjbhyZmOTo4ClNm9yWoN5umA2mDFFXSHLwqLlZkUOh32Mua_fSZX1WDnA8xiR2VI24aflhQyLUQx-Oaxxw-2HRWxyUSTZRlCR3-k-TBiAIxwDNhPNbIn9u">
+</div>
+<div>
+<p class="font-label-md text-on-surface">Toyota Alphard Gen 4</p>
+<p class="text-label-sm text-on-surface-variant">MY 2024</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 text-body-md">Luxury MPV</td>
+<td class="px-6 py-4"><span class="px-3 py-1 bg-surface-container-high rounded text-label-sm font-mono">DR 1288 LA</span></td>
+<td class="px-6 py-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/20 text-on-secondary-container text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+                                Available
+                            </span>
+</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-2">
+<div class="w-24 h-1.5 bg-surface-container-low rounded-full overflow-hidden">
+<div class="w-[100%] h-full bg-primary rounded-full"></div>
+</div>
+<span class="text-label-sm">Full</span>
+</div>
+</td>
+<td class="px-6 py-4 text-right">
+<button class="p-2 hover:text-primary transition-colors"><span class="material-symbols-outlined">edit_square</span></button>
+<button class="p-2 hover:text-error transition-colors"><span class="material-symbols-outlined">delete</span></button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-lowest/50 transition-colors">
+<td class="px-6 py-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Small thumbnail of a black Mitsubishi Pajero." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoJWWvldiCzsd7U_B0KqZvuP1O7rntXTQL1MAkP5QzykqvIv09Yj0F9_LtvlFdN88oN1YWFJ0fd_bRzxVzYzLj3uSukSAh1yx6t0Q30IuaPVQfriPRUAOzwoAOfI-VmIWJzWqPB6k1X4-1Tm77DhcJjaUs8hcN1sHpOyyseRquaO1uwJGqPoeKtMmGU1HEJgW5oTeSthkqr3hTtc7_Irz1lN16cUdqtXnxpggR-NZRtGAslGa4Tt2x">
+</div>
+<div>
+<p class="font-label-md text-on-surface">Mitsubishi Pajero Sport</p>
+<p class="text-label-sm text-on-surface-variant">MY 2023</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 text-body-md">Luxury SUV</td>
+<td class="px-6 py-4"><span class="px-3 py-1 bg-surface-container-high rounded text-label-sm font-mono">DR 9900 AB</span></td>
+<td class="px-6 py-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container/20 text-on-primary-container text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                                Rented
+                            </span>
+</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-2">
+<div class="w-24 h-1.5 bg-surface-container-low rounded-full overflow-hidden">
+<div class="w-[45%] h-full bg-primary rounded-full"></div>
+</div>
+<span class="text-label-sm">45%</span>
+</div>
+</td>
+<td class="px-6 py-4 text-right">
+<button class="p-2 hover:text-primary transition-colors"><span class="material-symbols-outlined">edit_square</span></button>
+<button class="p-2 hover:text-error transition-colors"><span class="material-symbols-outlined">delete</span></button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p-6 border-t border-outline-variant/30 flex justify-between items-center text-label-sm text-on-surface-variant">
+<p class="">Showing 1-10 of 42 vehicles</p>
+<div class="flex gap-2">
+<button class="w-10 h-10 flex items-center justify-center border border-outline-variant rounded-lg hover:bg-surface-container">1</button>
+<button class="w-10 h-10 flex items-center justify-center hover:bg-surface-container rounded-lg">2</button>
+<button class="w-10 h-10 flex items-center justify-center hover:bg-surface-container rounded-lg">3</button>
+<button class="w-10 h-10 flex items-center justify-center hover:bg-surface-container rounded-lg">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+    // Simple Search Filter Simulation
+    document.querySelector('input[type="text"]').addEventListener('input', function(e) {
+        const searchTerm = e.target.value.toLowerCase();
+        const cards = document.querySelectorAll('.group.bg-surface-container-lowest');
+        
+        cards.forEach(card => {
+            const modelName = card.querySelector('h3').textContent.toLowerCase();
+            const plate = card.querySelector('p').textContent.toLowerCase();
+            if(modelName.includes(searchTerm) || plate.includes(searchTerm)) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+
+    // Animate numbers on load
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const target = entry.target;
+                const endValue = parseInt(target.textContent);
+                let startValue = 0;
+                const duration = 1000;
+                const step = (endValue / duration) * 10;
+                
+                const timer = setInterval(() => {
+                    startValue += step;
+                    if (startValue >= endValue) {
+                        target.textContent = endValue + (target.textContent.includes('%') ? '%' : '');
+                        clearInterval(timer);
+                    } else {
+                        target.textContent = Math.floor(startValue) + (target.textContent.includes('%') ? '%' : '');
+                    }
+                }, 10);
+                observer.unobserve(target);
+            }
+        });
+    });
+
+    document.querySelectorAll('.text-display-lg').forEach(el => observer.observe(el));
+</script></main></div>
+
+</body></html>

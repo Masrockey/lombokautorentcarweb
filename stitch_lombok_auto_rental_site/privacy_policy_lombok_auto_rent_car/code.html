@@ -1,0 +1,261 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Hanken+Grotesk:wght@400;500;600&display=swap');</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={theme:{extend:{"colors":{"tertiary-fixed":"#e0e3e8","surface-bright":"#f8f9fa","on-surface":"#191c1d","tertiary-container":"#54585d","on-tertiary-fixed":"#181c20","primary-fixed":"#d9e2ff","on-surface-variant":"#434653","on-primary-fixed-variant":"#00419c","surface-tint":"#1d59c1","on-error-container":"#93000a","error-container":"#ffdad6","secondary-fixed":"#ffdcc6","outline-variant":"#c3c6d5","on-tertiary-container":"#cbced3","surface-container-lowest":"#ffffff","surface-container-low":"#f3f4f5","on-background":"#191c1d","error":"#ba1a1a","on-secondary":"#ffffff","inverse-on-surface":"#f0f1f2","on-secondary-fixed":"#301400","tertiary-fixed-dim":"#c3c7cc","on-error":"#ffffff","primary-container":"#0f52ba","primary":"#003c90","surface-dim":"#d9dadb","on-secondary-container":"#693200","surface-container-high":"#e7e8e9","outline":"#737784","surface-container":"#edeeef","primary-fixed-dim":"#b0c6ff","on-primary-fixed":"#001945","on-primary":"#ffffff","on-primary-container":"#bcceff","secondary":"#954a00","inverse-surface":"#2e3132","secondary-container":"#fc9342","background":"#f8f9fa","secondary-fixed-dim":"#ffb785","surface":"#f8f9fa","on-secondary-fixed-variant":"#713700","tertiary":"#3d4145","on-tertiary":"#ffffff","surface-variant":"#e1e3e4","surface-container-highest":"#e1e3e4","on-tertiary-fixed-variant":"#43474c","inverse-primary":"#b0c6ff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-mobile":"16px","unit":"8px","gutter":"24px","margin-desktop":"40px","container-max":"1280px"},"fontFamily":{"headline-md":["Manrope"],"label-sm":["Hanken Grotesk"],"label-md":["Hanken Grotesk"],"body-md":["Hanken Grotesk"],"body-lg":["Hanken Grotesk"],"display-lg":["Manrope"],"display-lg-mobile":["Manrope"],"headline-sm":["Manrope"]},"fontSize":{"headline-md":["32px",{"lineHeight":"40px","fontWeight":"700"}],"label-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.05em","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"800"}],"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-sm":["24px",{"lineHeight":"32px","fontWeight":"700"}]}}}}</script><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&amp;family=Hanken+Grotesk:wght@400;500;600&amp;display=swap" data-snapdom="injected-import"></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-3">
+  <img alt="logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLv6LGjSP8co3lKEukuonqv5wwJa2TjMf5BdN5Z0qjX85asAdMwRwXj5m5mRiBf1gJ68P8LRh2K3FFKD_KwW34KHCdZ3r_BO0zWW1l7eDLFSS5fup2eAnaZKbsih_IVmnGLGOEtA-X8fg2SHVt52o0XCG3cMLFVK19zUiV0QFUXien8u-z9aWBJGQWBWg7tJ3Ax7LIWaPnQ3AEE3fty4n9_2mvzvDOICbXXKa6BqctHcBykjbiz0Iz77A4HXGRjV48CUKMpdTly7hA">
+  <span class="font-headline-sm text-headline-sm text-primary">Lombok Auto Rent</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+  <a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Home</a>
+  <a class="text-label-md font-label-md text-primary font-bold transition-colors" href="#">Car List</a>
+  <a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Blog</a>
+</nav>
+<div class="flex items-center gap-6">
+  <button class="text-on-surface-variant hover:text-primary transition-colors">
+    <span class="material-symbols-outlined">search</span>
+  </button>
+  <a class="hidden sm:flex items-center justify-center px-8 py-3 bg-secondary-container text-on-secondary-container font-label-md text-label-md rounded-lg hover:scale-105 hover:shadow-xl transition-all uppercase tracking-wider" href="#">BOOK NOW</a>
+  <button class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary hover:bg-primary/90 transition-colors">
+    <span class="material-symbols-outlined">person</span>
+  </button>
+</div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Immersive Header Section -->
+<section class="relative w-full overflow-hidden bg-surface-container-low pt-24 pb-20 lg:pt-32 lg:pb-32">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-primary/5 [clip-path:polygon(20%_0%,100%_0%,100%_100%,0%_100%)]"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop relative z-10">
+<div class="max-w-3xl">
+<div class="flex items-center gap-4 mb-6">
+<div class="h-px w-12 bg-secondary"></div>
+<span class="text-label-md font-label-md text-secondary uppercase tracking-[0.2em]">Legal Framework</span>
+</div>
+<h1 class="text-display-lg-mobile lg:text-display-lg font-display-lg text-on-surface mb-8">
+                    Privacy Policy &amp; <br>
+<span class="text-primary italic">Data Protection</span>
+</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+                    At Lombok Auto Rent, we believe in transparency. This policy outlines our commitment to safeguarding your personal information while providing you with premium mobility services across Lombok.
+                </p>
+</div>
+</div>
+<!-- Decorative Element -->
+<div class="absolute -bottom-12 -right-12 w-64 h-64 border-[16px] border-secondary/10 rounded-full"></div>
+</section>
+<!-- Content Grid -->
+<section class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop py-20 lg:py-32">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Table of Contents (Sticky Sidebar) -->
+<aside class="lg:col-span-4 hidden lg:block">
+<div class="sticky top-32 flex flex-col gap-1">
+<p class="text-label-sm font-label-sm text-outline mb-4 uppercase">Table of Contents</p>
+<a class="group flex items-center justify-between py-3 px-4 rounded-lg hover:bg-surface-container transition-all text-on-surface-variant hover:text-primary" href="#intro">
+<span class="text-label-md font-label-md">01. Introduction</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</a>
+<a class="group flex items-center justify-between py-3 px-4 rounded-lg hover:bg-surface-container transition-all text-on-surface-variant hover:text-primary" href="#collection">
+<span class="text-label-md font-label-md">02. Information We Collect</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</a>
+<a class="group flex items-center justify-between py-3 px-4 rounded-lg hover:bg-surface-container transition-all text-on-surface-variant hover:text-primary" href="#usage">
+<span class="text-label-md font-label-md">03. How We Use Data</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</a>
+<a class="group flex items-center justify-between py-3 px-4 rounded-lg hover:bg-surface-container transition-all text-on-surface-variant hover:text-primary" href="#security">
+<span class="text-label-md font-label-md">04. Data Security</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</a>
+<a class="group flex items-center justify-between py-3 px-4 rounded-lg hover:bg-surface-container transition-all text-on-surface-variant hover:text-primary bg-surface-container text-primary" href="#cookies">
+<span class="text-label-md font-label-md">05. Cookies Policy</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</a>
+</div>
+</aside>
+<!-- Main Policy Text -->
+<div class="lg:col-span-8 flex flex-col gap-24">
+<!-- Section 1 -->
+<div class="scroll-mt-32" id="intro">
+<div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary-fixed text-primary font-headline-sm mb-6">1</div>
+<h2 class="text-headline-md font-headline-md text-primary mb-6">Introduction</h2>
+<div class="prose max-w-none">
+<p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
+                            Lombok Auto Rent ("we," "our," or "us") is dedicated to protecting the privacy of our customers. This Privacy Policy details the types of personal information we receive and collect when you use our services, including our website and physical rental locations in Lombok. Your trust is our most valuable asset, and we handle your data with the same care we provide to our fleet.
+                        </p>
+</div>
+</div>
+<!-- Section 2 -->
+<div class="scroll-mt-32" id="collection">
+<div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary-fixed text-primary font-headline-sm mb-6">2</div>
+<h2 class="text-headline-md font-headline-md text-primary mb-6">Information We Collect</h2>
+<p class="text-body-md font-body-md text-on-surface-variant mb-8 leading-relaxed">
+                        To provide a seamless rental experience and comply with local Indonesian regulations, we collect the following categories of data:
+                    </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="p-6 bg-surface-container rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-secondary mb-4">person_book</span>
+<h4 class="text-label-md font-label-md text-on-surface mb-2">Personal Identity</h4>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Full name, copy of Passport or KTP, and a valid International/National Driver's License.</p>
+</div>
+<div class="p-6 bg-surface-container rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-secondary mb-4">contact_phone</span>
+<h4 class="text-label-md font-label-md text-on-surface mb-2">Contact Details</h4>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Email address, phone number (WhatsApp preferred), and temporary residence address in Lombok.</p>
+</div>
+<div class="p-6 bg-surface-container rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-secondary mb-4">payments</span>
+<h4 class="text-label-md font-label-md text-on-surface mb-2">Payment Information</h4>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Credit card details (processed via secure gateway) or bank transfer records for booking confirmation.</p>
+</div>
+<div class="p-6 bg-surface-container rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-secondary mb-4">location_on</span>
+<h4 class="text-label-md font-label-md text-on-surface mb-2">Technical Data</h4>
+<p class="text-label-sm font-label-sm text-on-surface-variant">IP address, browser type, and duration of visit to our online booking platform.</p>
+</div>
+</div>
+</div>
+<!-- Section 3 -->
+<div class="scroll-mt-32" id="usage">
+<div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary-fixed text-primary font-headline-sm mb-6">3</div>
+<h2 class="text-headline-md font-headline-md text-primary mb-6">How We Use Information</h2>
+<ul class="space-y-6">
+<li class="flex gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h4 class="text-label-md font-label-md text-on-surface">Service Fulfillment</h4>
+<p class="text-body-md font-body-md text-on-surface-variant">Processing your reservations, managing rental agreements, and providing roadside assistance.</p>
+</div>
+</li>
+<li class="flex gap-4">
+<span class="material-symbols-outlined text-primary mt-1">security</span>
+<div>
+<h4 class="text-label-md font-label-md text-on-surface">Legal Compliance</h4>
+<p class="text-body-md font-body-md text-on-surface-variant">Meeting Indonesian insurance requirements and traffic regulation reporting where mandatory.</p>
+</div>
+</li>
+<li class="flex gap-4">
+<span class="material-symbols-outlined text-primary mt-1">campaign</span>
+<div>
+<h4 class="text-label-md font-label-md text-on-surface">Communication</h4>
+<p class="text-body-md font-body-md text-on-surface-variant">Sending booking updates, invoices, and occasionally, promotional offers for your next Lombok trip.</p>
+</div>
+</li>
+</ul>
+</div>
+<!-- Section 4 -->
+<div class="scroll-mt-32" id="security">
+<div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary-fixed text-primary font-headline-sm mb-6">4</div>
+<h2 class="text-headline-md font-headline-md text-primary mb-6">Data Security</h2>
+<div class="relative p-8 bg-on-surface rounded-2xl text-on-primary">
+<div class="flex flex-col md:flex-row items-center gap-8">
+<div class="flex-1">
+<h3 class="text-headline-sm font-headline-sm mb-4 text-primary-fixed">Enterprise-Grade Protection</h3>
+<p class="text-body-md font-body-md opacity-80 leading-relaxed mb-0">
+                                    We implement SSL/TLS encryption for all data transfers. Our physical servers are housed in secure facilities with restricted access. Payment information is handled exclusively by PCI-DSS compliant payment processors and is never stored on our local servers.
+                                </p>
+</div>
+<div class="hidden md:block">
+<span class="material-symbols-outlined text-[80px] text-secondary opacity-30">verified_user</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 5 -->
+<div class="scroll-mt-32" id="cookies">
+<div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary-fixed text-primary font-headline-sm mb-6">5</div>
+<h2 class="text-headline-md font-headline-md text-primary mb-6">Cookies Policy</h2>
+<div class="bg-surface-container-high p-8 rounded-xl border-l-4 border-secondary">
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed italic">
+                            "We use 'cookies' to enhance your browsing experience. Cookies are small data files stored on your device that help us remember your preferences (like currency or language) and track website analytics to improve our service speed."
+                        </p>
+<button class="mt-6 text-label-md font-label-md text-primary hover:underline flex items-center gap-2">
+                            Manage Cookie Preferences
+                            <span class="material-symbols-outlined text-[16px]">settings</span>
+</button>
+</div>
+</div>
+<!-- Section 6: Contact -->
+<div class="pt-12 border-t border-outline-variant">
+<div class="flex flex-col md:flex-row items-start justify-between gap-8">
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Privacy Concerns?</h3>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-sm">If you have any questions regarding your data or wish to request data deletion, our legal team is here to help.</p>
+</div>
+<div class="flex flex-col gap-4 w-full md:w-auto">
+<a class="flex items-center gap-4 p-4 bg-surface-container rounded-lg hover:shadow-md transition-all" href="mailto:privacy@lombokautorent.com">
+<span class="material-symbols-outlined text-primary">mail</span>
+<div>
+<p class="text-label-sm font-label-sm text-outline uppercase">Email Support</p>
+<p class="text-body-md font-body-md text-on-surface">privacy@lombokautorent.com</p>
+</div>
+</a>
+<div class="flex items-center gap-4 p-4 bg-surface-container rounded-lg">
+<span class="material-symbols-outlined text-primary">pin_drop</span>
+<div>
+<p class="text-label-sm font-label-sm text-outline uppercase">Legal Office</p>
+<p class="text-body-md font-body-md text-on-surface">Mataram, West Nusa Tenggara</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom CTA -->
+<section class="w-full bg-primary py-16 lg:py-24">
+<div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop flex flex-col items-center text-center">
+<h2 class="text-display-lg-mobile lg:text-display-lg font-display-lg text-on-primary mb-6">Drive with Peace of Mind.</h2>
+<p class="text-body-lg font-body-lg text-on-primary/80 mb-10 max-w-xl">By continuing to use our services, you acknowledge that you have read and understood our privacy practices.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="px-10 py-4 bg-secondary-container text-on-secondary-container font-label-md text-label-md rounded-full hover:scale-105 transition-transform shadow-xl" href="#">Back to Booking</a>
+<a class="px-10 py-4 border border-on-primary/30 text-on-primary font-label-md text-label-md rounded-full hover:bg-on-primary/10 transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</section>
+<script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    
+                    // Update active state in sidebar
+                    document.querySelectorAll('aside a').forEach(a => {
+                        a.classList.remove('bg-surface-container', 'text-primary');
+                        a.classList.add('text-on-surface-variant');
+                    });
+                    this.classList.add('bg-surface-container', 'text-primary');
+                }
+            });
+        });
+
+        // Simple intersection observer for sidebar highlighting
+        const observerOptions = {
+            root: null,
+            threshold: 0.5,
+            rootMargin: '0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    const sidebarLink = document.querySelector(`aside a[href="#${id}"]`);
+                    if (sidebarLink) {
+                        document.querySelectorAll('aside a').forEach(a => {
+                            a.classList.remove('bg-surface-container', 'text-primary');
+                        });
+                        sidebarLink.classList.add('bg-surface-container', 'text-primary');
+                    }
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('div[id]').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</div></main><footer class="w-full bg-surface-container-highest pt-20 pb-10 border-t border-outline-variant"><div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16"><div class="col-span-1 md:col-span-1"><img alt="logo lar.png" class="h-10 w-auto object-contain mb-6" src="https://lh3.googleusercontent.com/aida/AP1WRLv6LGjSP8co3lKEukuonqv5wwJa2TjMf5BdN5Z0qjX85asAdMwRwXj5m5mRiBf1gJ68P8LRh2K3FFKD_KwW34KHCdZ3r_BO0zWW1l7eDLFSS5fup2eAnaZKbsih_IVmnGLGOEtA-X8fg2SHVt52o0XCG3cMLFVK19zUiV0QFUXien8u-z9aWBJGQWBWg7tJ3Ax7LIWaPnQ3AEE3fty4n9_2mvzvDOICbXXKa6BqctHcBykjbiz0Iz77A4HXGRjV48CUKMpdTly7hA"><p class="text-body-md font-body-md text-on-surface-variant">Premium car rental services in Lombok, offering comfort, safety, and tropical style for every journey.</p></div><div><h4 class="text-label-md font-label-md text-on-surface mb-6 uppercase tracking-wider">Services</h4><nav class="flex flex-col gap-4"><a class="text-body-md text-on-surface-variant hover:text-primary" href="#">SUV Rental</a><a class="text-body-md text-on-surface-variant hover:text-primary" href="#">Luxury Fleet</a><a class="text-body-md text-on-surface-variant hover:text-primary" href="#">Airport Transfer</a><a class="text-body-md text-on-surface-variant hover:text-primary" href="#">Wedding Cars</a></nav></div><div><h4 class="text-label-md font-label-md text-on-surface mb-6 uppercase tracking-wider">Locations</h4><nav class="flex flex-col gap-4"><a class="text-body-md text-on-surface-variant hover:text-primary" href="#">Mataram City</a><a class="text-body-md text-on-surface-variant hover:text-primary" href="#">Lombok Airport</a><a class="text-body-md text-on-surface-variant hover:text-primary" href="#">Senggigi</a><a class="text-body-md text-on-surface-variant hover:text-primary" href="#">Kuta Lombok</a></nav></div><div><h4 class="text-label-md font-label-md text-on-surface mb-6 uppercase tracking-wider">Legal</h4><nav class="flex flex-col gap-4"><a class="text-body-md text-on-surface-variant hover:text-primary" data-path="terms-of-service" href="#">Terms of Service</a><a class="text-body-md text-on-surface-variant hover:text-primary" data-path="privacy-policy" href="#">Privacy Policy</a><a class="text-body-md text-on-surface-variant hover:text-primary" data-path="rental-agreement" href="#">Rental Agreement</a><a class="text-body-md text-on-surface-variant hover:text-primary" data-path="insurance-policy" href="#">Insurance Policy</a></nav></div></div><div class="border-t border-outline-variant pt-8 flex flex-col md:flex-row justify-between items-center gap-4"><p class="text-label-sm font-label-sm text-on-surface-variant">© 2024 Lombok Auto Rent. All rights reserved.</p><div class="flex gap-6"><span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">qr_code_2</span><span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">team_drive_key</span><span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">mail</span></div></div></div></footer>
+
+</body></html>

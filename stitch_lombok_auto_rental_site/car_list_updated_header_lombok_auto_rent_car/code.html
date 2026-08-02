@@ -1,0 +1,520 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<style>
+        @layer base {
+            html, body {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                overscroll-behavior: none;
+            }
+            main > :first-child {
+                margin-top: 0 !important;
+            }
+            main > :last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&amp;family=Manrope:wght@100..900&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#c3c6d5",
+                        "primary": "#003c90",
+                        "surface-container-low": "#f3f4f5",
+                        "secondary-fixed": "#ffdcc6",
+                        "on-tertiary-fixed": "#181c20",
+                        "on-primary-fixed-variant": "#00419c",
+                        "on-tertiary-fixed-variant": "#43474c",
+                        "on-error-container": "#93000a",
+                        "surface-tint": "#1d59c1",
+                        "surface-container-high": "#e7e8e9",
+                        "on-surface": "#191c1d",
+                        "inverse-primary": "#b0c6ff",
+                        "secondary-fixed-dim": "#ffb785",
+                        "secondary": "#954a00",
+                        "on-secondary-fixed": "#301400",
+                        "tertiary-container": "#54585d",
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#cbced3",
+                        "surface-variant": "#e1e3e4",
+                        "background": "#f8f9fa",
+                        "primary-container": "#0f52ba",
+                        "on-primary-container": "#bcceff",
+                        "on-primary-fixed": "#001945",
+                        "outline": "#737784",
+                        "inverse-on-surface": "#f0f1f2",
+                        "primary-fixed": "#d9e2ff",
+                        "surface-dim": "#d9dadb",
+                        "primary-fixed-dim": "#b0c6ff",
+                        "on-surface-variant": "#434653",
+                        "tertiary-fixed": "#e0e3e8",
+                        "tertiary": "#3d4145",
+                        "on-background": "#191c1d",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#e1e3e4",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#693200",
+                        "secondary-container": "#fc9342",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#edeeef",
+                        "on-secondary-fixed-variant": "#713700",
+                        "tertiary-fixed-dim": "#c3c7cc",
+                        "on-error": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#f8f9fa",
+                        "inverse-surface": "#2e3132",
+                        "surface": "#f8f9fa"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "margin-desktop": "40px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["Manrope"],
+                        "headline-sm": ["Manrope"],
+                        "label-md": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-md": ["Manrope"],
+                        "display-lg": ["Manrope"],
+                        "body-md": ["Hanken Grotesk"],
+                        "label-sm": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}]
+                    }
+                }
+            },
+        }
+    </script>
+</head>
+<body class="bg-background font-body-md text-on-background">
+<header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-surface-container">
+<div class="h-20 max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between">
+<div class="flex items-center gap-2">
+<img alt="Lombok Auto Rent" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBn-hY2YbKQS9UpEjkDurEEDQ-cS1AxJE9o3mddDLsYEaicyMJEGpI_QoJl7_wcdUW2i_3MPx3iRPC8hNGH4i9uqqPndSraRtA2OezII4w801wiNuC9yUmFv9MD4JrUjGWJqZkv-bYTwYUogzAeUhIGIIvivJ1_0xtLGmbli-4WSvI5QtVKsTBMaYVKHbLFgEQA9HPc_KFVn0Hka0yKHSetAQv-i4IekcgJMZsO_uTWgdbCL9DMw4Y643NYf_QMwryVqQ">
+<span class="font-headline-sm text-[20px] text-primary">Lombok Auto Rent</span>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Home</a>
+<a aria-current="page" class="font-label-md text-label-md text-primary font-bold" href="#">Car List</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Blog</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[24px]">search</span>
+</button>
+<a class="hidden sm:flex bg-secondary-container text-on-secondary-container px-8 py-2.5 rounded-lg font-label-md text-label-md hover:opacity-90 transition-all uppercase font-bold tracking-tight" href="#">Book Now</a>
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center cursor-pointer hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-on-primary text-[20px]">person</span>
+</div>
+</div>
+</div>
+</header>
+<main class="w-full pt-20">
+<div class="flex flex-col w-full">
+<!-- Hero Section with Breadcrumbs -->
+<section class="relative bg-surface py-12 lg:py-20 overflow-hidden">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-primary/5 -skew-x-12 transform translate-x-1/4"></div>
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop relative z-10">
+<nav class="flex items-center gap-2 mb-6 font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant/60">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-bold">Our Fleet</span>
+</nav>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="space-y-4 max-w-2xl">
+<h1 class="font-display-lg text-display-lg text-on-surface">Our Premium Fleet</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Experience Lombok in unparalleled comfort. From rugged SUVs for mountain adventures to luxury sedans for coastal cruising, discover the perfect companion for your journey.</p>
+</div>
+<div class="flex items-center gap-4 bg-white p-2 rounded-full shadow-sm border border-outline-variant/30">
+<div class="px-6 py-2 border-r border-outline-variant/30">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase">Results</p>
+<p class="font-headline-sm text-[18px] text-primary">24 Vehicles</p>
+</div>
+<button class="flex items-center gap-2 px-6 py-2 text-primary font-label-md hover:bg-primary/5 rounded-full transition-all">
+<span class="material-symbols-outlined">sort</span>
+                            Sort by: Featured
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop w-full py-12 lg:py-20">
+<div class="flex flex-col lg:flex-row gap-gutter">
+<!-- Sidebar Filters -->
+<aside class="w-full lg:w-72 shrink-0 space-y-10">
+<!-- Search Filter -->
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md text-primary uppercase tracking-widest flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">search</span> Search Vehicle
+                        </h4>
+<div class="relative group">
+<input class="w-full bg-surface-container-low border-b-2 border-outline-variant focus:border-primary outline-none py-3 px-2 font-body-md transition-all group-hover:bg-white" placeholder="Search model or brand..." type="text">
+</div>
+</div>
+<!-- Car Type Filter -->
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md text-primary uppercase tracking-widest">Car Category</h4>
+<div class="flex flex-col gap-3">
+<label class="flex items-center justify-between cursor-pointer group">
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded-sm border-2 border-outline-variant group-hover:border-primary flex items-center justify-center transition-all">
+<div class="w-2.5 h-2.5 bg-primary rounded-full scale-0 group-[.active]:scale-100 transition-transform"></div>
+</div>
+<span class="font-body-md text-on-surface">Luxury SUV</span>
+</div>
+<span class="font-label-sm text-on-surface-variant/50">08</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer group">
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded-sm border-2 border-outline-variant group-hover:border-primary flex items-center justify-center transition-all"></div>
+<span class="font-body-md text-on-surface">Economy Hatchback</span>
+</div>
+<span class="font-label-sm text-on-surface-variant/50">12</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer group">
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded-sm border-2 border-outline-variant group-hover:border-primary flex items-center justify-center transition-all"></div>
+<span class="font-body-md text-on-surface">Convertible Luxury</span>
+</div>
+<span class="font-label-sm text-on-surface-variant/50">04</span>
+</label>
+</div>
+</div>
+<!-- Transmission -->
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md text-primary uppercase tracking-widest">Transmission</h4>
+<div class="flex gap-2">
+<button class="flex-1 py-2 rounded-lg bg-primary text-on-primary font-label-md shadow-md">Automatic</button>
+<button class="flex-1 py-2 rounded-lg bg-surface-container-high text-on-surface-variant font-label-md hover:bg-surface-variant transition-colors">Manual</button>
+</div>
+</div>
+<!-- Price Range -->
+<div class="space-y-6">
+<div class="flex justify-between items-center">
+<h4 class="font-label-md text-label-md text-primary uppercase tracking-widest">Price / Day</h4>
+<span class="font-label-sm text-secondary font-bold">$120+</span>
+</div>
+<div class="relative w-full h-1 bg-surface-container-highest rounded-full">
+<div class="absolute left-1/4 right-0 h-full bg-primary rounded-full"></div>
+<div class="absolute left-1/4 top-1/2 -translate-y-1/2 w-4 h-4 bg-white border-2 border-primary rounded-full shadow-sm cursor-pointer"></div>
+<div class="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-4 bg-white border-2 border-primary rounded-full shadow-sm cursor-pointer"></div>
+</div>
+</div>
+<button class="w-full bg-secondary text-on-secondary py-4 rounded-xl font-label-md uppercase tracking-widest shadow-xl hover:translate-y-[-2px] active:translate-y-0 transition-all">
+                        Apply Filters
+                    </button>
+<!-- Promotional Card -->
+<div class="bg-primary-container p-8 rounded-3xl relative overflow-hidden group">
+<div class="relative z-10 space-y-4">
+<span class="bg-secondary text-on-secondary px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-tighter">Special Offer</span>
+<h3 class="font-headline-sm text-on-primary-container leading-tight">Need a driver for your trip?</h3>
+<p class="font-label-sm text-on-primary-container/80">Add a professional local guide for just $25/day.</p>
+<a class="inline-flex items-center gap-2 text-on-primary-container font-bold group-hover:gap-4 transition-all" href="#">Learn more <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+<div class="absolute -bottom-10 -right-10 w-32 h-32 bg-on-primary-container/10 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700"></div>
+</div>
+</aside>
+<!-- Car Grid -->
+<div class="flex-1">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Car Card 1 -->
+<div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A side view of a sleek, white high-end luxury SUV parked on a coastal road in Lombok during sunset. The lighting is warm and golden, reflecting off the polished metallic surfaces of the car. In the background, turquoise ocean waves crash against volcanic rocks, and lush tropical greenery frames the shot." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCePjHyN6Gk_eTjcgC4hnPdRzmW5qWhtwpDibLjD_02fcOtLQdPWqUjpr_duGmNYeSc_dl6w8Le7hRGDdEyAK7xeJWpPTXW1G67nOKfnBLPwTb1eNdYMT2SAwXbVElleW5LLtLsQiPm-dlRl83_lUjuOvUQAAw_-6505JSH8zxreKJW-QZWXYHjJt8W27oHYpKZlOkczSLcD713iI8V3TaouJQmy2VXkNL3QQ_8z419EVcryPkNdzFE">
+<div class="absolute top-6 left-6 flex flex-col gap-2">
+<span class="bg-white/90 backdrop-blur-md text-primary px-3 py-1 rounded-full font-label-sm shadow-sm">Premium Class</span>
+<span class="bg-secondary text-on-secondary px-3 py-1 rounded-full font-label-sm shadow-sm">Hot Deal</span>
+</div>
+<div class="absolute bottom-6 right-6">
+<div class="w-12 h-12 bg-white/90 backdrop-blur-md rounded-full flex items-center justify-center text-primary shadow-lg cursor-pointer hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">favorite</span>
+</div>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-6">
+<div>
+<h3 class="font-headline-sm text-on-surface group-hover:text-primary transition-colors">Toyota Fortuner VRZ</h3>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wide">Elite SUV / 2023 Model</p>
+</div>
+<div class="text-right">
+<p class="font-headline-md text-primary">$85<span class="text-label-sm text-on-surface-variant">/day</span></p>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-4 mb-8">
+<div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-[20px]">groups</span>
+<span class="font-label-sm text-on-surface-variant">7 Seats</span>
+</div>
+<div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-[20px]">settings_accessibility</span>
+<span class="font-label-sm text-on-surface-variant">Auto</span>
+</div>
+<div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-[20px]">local_gas_station</span>
+<span class="font-label-sm text-on-surface-variant">Diesel</span>
+</div>
+</div>
+<div class="mt-auto flex gap-3">
+<button class="flex-1 bg-primary text-on-primary py-3.5 rounded-xl font-label-md hover:bg-primary-container transition-all shadow-lg shadow-primary/20">Book Now</button>
+<button class="px-5 border border-outline-variant rounded-xl hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined">visibility</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Car Card 2 -->
+<div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A front 3/4 view of a modern compact silver crossover car driving on a scenic palm-lined road in Mandalika, Lombok. The midday sun is bright, casting sharp clean shadows. The atmosphere is vibrant and tropical with clear blue skies and distant green hills." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiveonmfHYHpfRFzfAAgMFq2anEluAIlBCbDQ2n11rcHx6APxD4pnYeTfk2DJMSIFHROwSjcZZvHzIaI04CQBgR6qG5OXPsHW4zMICFtVE-J97SDrCYMH3GMzCshzZGNHUBa90uD5v1owGeNjc8HxQp28MlIrK4j5nlGIsYRyZa8J7u2vicvF-puNJvEEqkLZH1Xl5KujygwP1PTsyyAnPrlaMHGwAx5ePyxuMlYEsCk8GcnDVdqOM">
+<div class="absolute top-6 left-6">
+<span class="bg-white/90 backdrop-blur-md text-primary px-3 py-1 rounded-full font-label-sm shadow-sm">Comfort City</span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-6">
+<div>
+<h3 class="font-headline-sm text-on-surface group-hover:text-primary transition-colors">Mitsubishi Xpander</h3>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wide">Family MPV / 2022 Model</p>
+</div>
+<div class="text-right">
+<p class="font-headline-md text-primary">$45<span class="text-label-sm text-on-surface-variant">/day</span></p>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-4 mb-8">
+<div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-[20px]">groups</span>
+<span class="font-label-sm text-on-surface-variant">7 Seats</span>
+</div>
+<div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-[20px]">settings_accessibility</span>
+<span class="font-label-sm text-on-surface-variant">Auto</span>
+</div>
+<div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-[20px]">local_gas_station</span>
+<span class="font-label-sm text-on-surface-variant">Petrol</span>
+</div>
+</div>
+<div class="mt-auto flex gap-3">
+<button class="flex-1 bg-primary text-on-primary py-3.5 rounded-xl font-label-md hover:bg-primary-container transition-all shadow-lg shadow-primary/20">Book Now</button>
+<button class="px-5 border border-outline-variant rounded-xl hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined">visibility</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Car Card 3 (Featured Landscape Layout) -->
+<div class="md:col-span-2 group flex flex-col md:flex-row bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500">
+<div class="relative md:w-1/2 h-72 md:h-auto overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="A dramatic low-angle shot of a black luxury 4x4 rugged Jeep parked on the black sand beach of Semeti, Lombok. The ocean mist creates a moody, premium atmosphere. High contrast lighting accentuates the vehicle's tough lines and off-road tires. The background features jagged volcanic rock formations under a cloudy morning sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5dlkKTa53xRNaoGLDmLXN8fTP_11ZWlVVcsECz_EHj8FBkFZhDyaPKftM3nUoluhho3juuJSQVARot-WLb192aWDSUjt0oVDBylCBvDLAlbU6DBTdHRkZuo7IF_cr8ldDGOJ7o6Y_oMI8FQ54PYlK2Di_pthAiB67LOixUtDTE34fg9vxPvt3LebvDXK-NJvUbooBS-GUPJsBVl1ZtmT9u0c1Y_dPjY1OdcRI09A6Z65TEkNCkUPw">
+<div class="absolute bottom-6 left-6">
+<div class="flex gap-2">
+<span class="bg-primary/90 backdrop-blur-md text-on-primary px-4 py-2 rounded-lg font-label-md shadow-lg">Adventure Expert</span>
+</div>
+</div>
+</div>
+<div class="p-10 flex flex-col justify-center md:w-1/2">
+<div class="flex items-center gap-2 text-secondary mb-2">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-on-surface-variant ml-2">(48 Reviews)</span>
+</div>
+<h3 class="font-headline-md text-on-surface mb-2">Jeep Wrangler Rubicon</h3>
+<p class="font-body-md text-on-surface-variant mb-8">Ultimate off-road performance for exploring Lombok's hidden waterfalls and rugged northern trails. Unmatched safety and style.</p>
+<div class="grid grid-cols-3 gap-6 mb-8 border-y border-outline-variant/20 py-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">speed</span>
+<div>
+<p class="font-label-sm text-on-surface-variant leading-none">Power</p>
+<p class="font-label-md text-on-surface">285 HP</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">settings</span>
+<div>
+<p class="font-label-sm text-on-surface-variant leading-none">Drive</p>
+<p class="font-label-md text-on-surface">4 x 4</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">luggage</span>
+<div>
+<p class="font-label-sm text-on-surface-variant leading-none">Storage</p>
+<p class="font-label-md text-on-surface">Large</p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider">Start from</p>
+<p class="font-display-lg text-[32px] text-primary">$150<span class="text-[16px] text-on-surface-variant">/day</span></p>
+</div>
+<button class="bg-secondary text-on-secondary px-10 py-4 rounded-xl font-label-md uppercase tracking-widest shadow-lg hover:shadow-secondary/30 transition-all">Select Vehicle</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="mt-20 flex items-center justify-center gap-3">
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-12 h-12 rounded-full bg-primary text-on-primary font-bold shadow-md">1</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant text-on-surface-variant font-bold hover:bg-surface-container-high transition-all">2</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant text-on-surface-variant font-bold hover:bg-surface-container-high transition-all">3</button>
+<span class="text-on-surface-variant mx-2">...</span>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Why Choose Us Banner -->
+<section class="bg-inverse-surface text-inverse-on-surface py-20 relative overflow-hidden">
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-12 relative z-10">
+<div class="flex items-start gap-6">
+<div class="w-16 h-16 rounded-2xl bg-primary/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[32px]">verified_user</span>
+</div>
+<div class="space-y-2">
+<h4 class="font-headline-sm">Premium Insurance</h4>
+<p class="font-body-md text-inverse-on-surface/70">Complete peace of mind with our comprehensive full-coverage insurance plans.</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<div class="w-16 h-16 rounded-2xl bg-primary/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[32px]">support_agent</span>
+</div>
+<div class="space-y-2">
+<h4 class="font-headline-sm">24/7 Roadside Assist</h4>
+<p class="font-body-md text-inverse-on-surface/70">Wherever you are in Lombok, our support team is just a phone call away.</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<div class="w-16 h-16 rounded-2xl bg-primary/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[32px]">location_on</span>
+</div>
+<div class="space-y-2">
+<h4 class="font-headline-sm">Easy Airport Pick-up</h4>
+<p class="font-body-md text-inverse-on-surface/70">Zero waiting time. Your car will be ready exactly when you land at LOP.</p>
+</div>
+</div>
+</div>
+<div class="absolute top-0 right-0 opacity-5 pointer-events-none">
+<svg fill="none" height="600" viewBox="0 0 600 600" width="600">
+<circle cx="300" cy="300" fill="white" r="300"></circle>
+</svg>
+</div>
+</section>
+<script>
+            // Simple intersection observer for reveal animations
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.group.flex-col').forEach(card => {
+                card.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
+                observer.observe(card);
+            });
+        </script>
+</div>
+</main>
+<footer class="w-full bg-surface-container text-on-surface py-20 mt-20">
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+<div class="space-y-6">
+<div class="flex items-center gap-3">
+<img alt="logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOZ3AEMgPWWZ3t2OsLjFnfRiPuAFHfkuxZi8m-5IrOyf0gNXyAncm4YoHP8GQiBITVMPJQmkTFRZwMJxuZrAp89RjNvO1f7OYnbccvfCrjJdFjJ245gK8yJc7t5Och1vYsB0EnLwM2e9i9Mv0FczZfSJFRXjH_tB6zaEEdtCVrJuvp8Aky0ZNmLofDN7t7GTlZZq4A9S1zryj_SOlhq3cRwG69u-EpqK-vLXhBqtL1WWdRN73nYEjsLuScMrvpwb6cxQ">
+<span class="font-headline-sm text-headline-sm text-primary">Lombok Auto Rent</span>
+</div>
+<p class="font-body-md text-on-surface-variant">Providing premium mobility solutions across Lombok with a focus on luxury, safety, and local expertise.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#"><span class="material-symbols-outlined text-[20px]">share</span></a>
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#"><span class="material-symbols-outlined text-[20px]">camera</span></a>
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#"><span class="material-symbols-outlined text-[20px]">public</span></a>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md text-primary uppercase">Services</h4>
+<nav class="flex flex-col gap-2">
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Airport Transfer</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Self Drive Rentals</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Luxury Fleet</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Corporate Rental</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md text-primary uppercase">Locations</h4>
+<nav class="flex flex-col gap-2">
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Mataram City</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Senggigi Beach</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Kuta Lombok</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Lombok Airport (LOP)</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md text-primary uppercase">Contact</h4>
+<div class="space-y-3">
+<div class="flex gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">mail</span>
+<span class="font-body-md">hello@lombokautorent.com</span>
+</div>
+<div class="flex gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">call</span>
+<span class="font-body-md">+62 370 123 4567</span>
+</div>
+<div class="flex gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">pin_drop</span>
+<span class="font-body-md">Jl. Raya Senggigi, Lombok, NTB</span>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop mt-20 pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4 text-on-surface-variant font-label-sm text-label-sm">
+<p>© 2024 Lombok Auto Rent Car. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>

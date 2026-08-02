@@ -1,0 +1,273 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={theme:{extend:{"colors":{"outline":"#737784","surface-container":"#edeeef","tertiary-fixed-dim":"#c3c7cc","surface-variant":"#e1e3e4","on-secondary-container":"#693200","secondary-fixed":"#ffdcc6","on-surface":"#191c1d","secondary-fixed-dim":"#ffb785","on-primary-container":"#bcceff","surface-container-low":"#f3f4f5","error":"#ba1a1a","surface-bright":"#f8f9fa","secondary-container":"#fc9342","surface-container-highest":"#e1e3e4","primary-fixed":"#d9e2ff","primary":"#003c90","on-tertiary-fixed":"#181c20","inverse-surface":"#2e3132","on-error-container":"#93000a","primary-container":"#0f52ba","secondary":"#954a00","inverse-primary":"#b0c6ff","surface-tint":"#1d59c1","on-background":"#191c1d","surface-container-high":"#e7e8e9","on-surface-variant":"#434653","on-primary-fixed-variant":"#00419c","on-secondary":"#ffffff","on-secondary-fixed":"#301400","surface-container-lowest":"#ffffff","inverse-on-surface":"#f0f1f2","surface-dim":"#d9dadb","tertiary-fixed":"#e0e3e8","on-tertiary-fixed-variant":"#43474c","background":"#f8f9fa","primary-fixed-dim":"#b0c6ff","on-primary":"#ffffff","error-container":"#ffdad6","outline-variant":"#c3c6d5","on-tertiary":"#ffffff","tertiary-container":"#54585d","tertiary":"#3d4145","on-secondary-fixed-variant":"#713700","surface":"#f8f9fa","on-tertiary-container":"#cbced3","on-primary-fixed":"#001945","on-error":"#ffffff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-desktop":"40px","container-max":"1280px","margin-mobile":"16px","unit":"8px","gutter":"24px"},"fontFamily":{"display-lg-mobile":["Manrope"],"body-md":["Hanken Grotesk"],"label-md":["Hanken Grotesk"],"headline-sm":["Manrope"],"headline-md":["Manrope"],"label-sm":["Hanken Grotesk"],"display-lg":["Manrope"],"body-lg":["Hanken Grotesk"]},"fontSize":{"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.05em","fontWeight":"600"}],"headline-sm":["24px",{"lineHeight":"32px","fontWeight":"700"}],"headline-md":["32px",{"lineHeight":"40px","fontWeight":"700"}],"label-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Hanken+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"></head><body class="bg-background font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col shadow-[1px_0_8px_rgba(0,0,0,0.02)]"><div class="p-8 flex items-center gap-3"><img alt="logo lar.png" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLv6LGjSP8co3lKEukuonqv5wwJa2TjMf5BdN5Z0qjX85asAdMwRwXj5m5mRiBf1gJ68P8LRh2K3FFKD_KwW34KHCdZ3r_BO0zWW1l7eDLFSS5fup2eAnaZKbsih_IVmnGLGOEtA-X8fg2SHVt52o0XCG3cMLFVK19zUiV0QFUXien8u-z9aWBJGQWBWg7tJ3Ax7LIWaPnQ3AEE3fty4n9_2mvzvDOICbXXKa6BqctHcBykjbiz0Iz77A4HXGRjV48CUKMpdTly7hA"><span class="font-headline-sm text-primary">Lombok Auto</span></div><nav class="flex-1 px-4 space-y-1" data-active-classes="bg-primary-container text-on-primary-container font-bold shadow-md"><a aria-current="page" class="flex items-center px-4 py-3 rounded-xl transition-all group bg-primary-container text-on-primary-container font-bold shadow-md" data-path="dashboard" href="#"><span class="material-symbols-outlined mr-3">dashboard</span>Dashboard</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="fleet-management" href="#"><span class="material-symbols-outlined mr-3">directions_car</span>Fleet Management</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="booking-management" href="#"><span class="material-symbols-outlined mr-3">calendar_month</span>Bookings</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="customers" href="#"><span class="material-symbols-outlined mr-3">person</span>Customers</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="blog" href="#"><span class="material-symbols-outlined mr-3">newspaper</span>Blog</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="reports-analytics" href="#"><span class="material-symbols-outlined mr-3">bar_chart</span>Reports/Analytics</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="reports" href="#"><span class="material-symbols-outlined mr-3">analytics</span>Reports</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="settings" href="#"><span class="material-symbols-outlined mr-3">settings</span>Settings</a></nav><div class="p-4 mt-auto"><div class="bg-surface-container-low p-4 rounded-xl flex items-center gap-3"><img alt="Profile" class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLsam9tVljf682QFhyYNFpEiHUEF2q0tay3KY2esUqjUzkJ0MQYhmEfSRUkbzRbyXhevleaDcH8Ug1WWLhlyGc_dUTJsMIpVtwIQCCozLPn4xQX_TmZlwEZP8D40NhlFX2cKLDIRdk0-LYeTbe4UndEYTWKYy3PJNPVCseeb08IrZoX3T4NykEwCtez1YcUUGbrBBn3RhpWw4M-zbnRAPNLik7jJZcqcM-5Bqtj0g1u1rO2uJ3PCWBXdCoM"><div class="overflow-hidden"><p class="text-label-md text-on-surface truncate">Admin User</p><p class="text-label-sm text-on-surface-variant truncate">admin@lombokauto.com</p></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/80 backdrop-blur-xl z-40 px-8 flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex-1 max-w-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant">search</span><input class="w-full bg-surface-container-low border-none rounded-full py-2.5 pl-11 pr-4 text-sm focus:ring-2 focus:ring-primary/20" placeholder="Search bookings, vehicles..." type="text"></div></div><div class="flex items-center gap-6"><button class="relative p-2 text-on-surface-variant hover:bg-surface-container-high rounded-full transition-colors"><span class="material-symbols-outlined">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-error rounded-full ring-2 ring-surface"></span></button><div class="h-8 w-[1px] bg-outline-variant"></div><div class="flex items-center gap-3 cursor-pointer group"><span class="text-label-md text-on-surface group-hover:text-primary transition-colors">Super Admin</span><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant" src="https://lh3.googleusercontent.com/aida/AP1WRLsam9tVljf682QFhyYNFpEiHUEF2q0tay3KY2esUqjUzkJ0MQYhmEfSRUkbzRbyXhevleaDcH8Ug1WWLhlyGc_dUTJsMIpVtwIQCCozLPn4xQX_TmZlwEZP8D40NhlFX2cKLDIRdk0-LYeTbe4UndEYTWKYy3PJNPVCseeb08IrZoX3T4NykEwCtez1YcUUGbrBBn3RhpWw4M-zbnRAPNLik7jJZcqcM-5Bqtj0g1u1rO2uJ3PCWBXdCoM"></div></div></header><main class="relative pt-20 bg-background min-h-screen"><div class="flex flex-col w-full p-8 gap-8">
+<!-- Header & Performance Summary -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter transition-all duration-700 opacity-0 opacity-100">
+<!-- Total Revenue Card -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow group relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-6xl text-primary">payments</span>
+</div>
+<p class="font-label-md text-on-surface-variant uppercase tracking-widest mb-1">Total Revenue</p>
+<h3 class="font-display-lg text-primary mb-2">Rp 142.5M</h3>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-success text-sm" style="color: #2e7d32">trending_up</span>
+<span class="text-label-sm text-on-surface-variant font-bold">+12.4% <span class="font-normal">vs last month</span></span>
+</div>
+</div>
+<!-- Active Bookings Card -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow group relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-6xl text-secondary">calendar_today</span>
+</div>
+<p class="font-label-md text-on-surface-variant uppercase tracking-widest mb-1">Active Bookings</p>
+<h3 class="font-display-lg text-on-surface mb-2">48</h3>
+<div class="flex items-center gap-2">
+<div class="h-1.5 w-24 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-3/4 rounded-full"></div>
+</div>
+<span class="text-label-sm text-on-surface-variant">75% Capacity</span>
+</div>
+</div>
+<!-- Fleet Utilization Card -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow group relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-6xl text-tertiary">directions_car</span>
+</div>
+<p class="font-label-md text-on-surface-variant uppercase tracking-widest mb-1">Fleet Utilization</p>
+<h3 class="font-display-lg text-on-surface mb-2">92.4%</h3>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-primary">verified</span>
+<span class="text-label-sm text-on-surface-variant font-bold">Peak Season <span class="font-normal">Efficiency</span></span>
+</div>
+</div>
+<!-- New Customers Card -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow group relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-6xl text-on-primary-container">person_add</span>
+</div>
+<p class="font-label-md text-on-surface-variant uppercase tracking-widest mb-1">New Customers</p>
+<h3 class="font-display-lg text-on-surface mb-2">128</h3>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-sm">arrow_upward</span>
+<span class="text-label-sm text-on-surface-variant font-bold">+18 <span class="font-normal">this week</span></span>
+</div>
+</div>
+</section>
+<!-- Main Content Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- Recent Bookings Table -->
+<section class="lg:col-span-2 flex flex-col gap-6 transition-all duration-700 opacity-0 opacity-100">
+<div class="flex items-end justify-between px-2">
+<div>
+<span class="font-label-sm text-primary uppercase tracking-[0.2em]">Operational Overview</span>
+<h2 class="font-headline-md text-on-surface mt-1">Recent Bookings</h2>
+</div>
+<button class="flex items-center gap-2 text-label-md text-primary hover:underline group">
+          View all transactions
+          <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low border-b border-outline-variant">
+<th class="px-6 py-4 font-label-md text-on-surface-variant uppercase tracking-wider">Customer</th>
+<th class="px-6 py-4 font-label-md text-on-surface-variant uppercase tracking-wider">Vehicle</th>
+<th class="px-6 py-4 font-label-md text-on-surface-variant uppercase tracking-wider">Rental Period</th>
+<th class="px-6 py-4 font-label-md text-on-surface-variant uppercase tracking-wider">Status</th>
+<th class="px-6 py-4 font-label-md text-on-surface-variant uppercase tracking-wider"></th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-lowest transition-colors group">
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">JD</div>
+<div>
+<p class="font-label-md text-on-surface">John Doe</p>
+<p class="text-label-sm text-on-surface-variant">Platinum Member</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 text-body-md text-on-surface">Toyota Alphard 2023</td>
+<td class="px-6 py-4">
+<p class="text-label-md text-on-surface">Oct 24 - Oct 28</p>
+<p class="text-label-sm text-on-surface-variant">4 Days</p>
+</td>
+<td class="px-6 py-4">
+<span class="px-3 py-1 rounded-full text-label-sm bg-primary-container text-on-primary-container">Confirmed</span>
+</td>
+<td class="px-6 py-4 text-right">
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-lowest transition-colors group">
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary font-bold">SK</div>
+<div>
+<p class="font-label-md text-on-surface">Sarah K.</p>
+<p class="text-label-sm text-on-surface-variant">Corporate Account</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 text-body-md text-on-surface">Mitsubishi Pajero Sport</td>
+<td class="px-6 py-4">
+<p class="text-label-md text-on-surface">Oct 25 - Oct 26</p>
+<p class="text-label-sm text-on-surface-variant">1 Day</p>
+</td>
+<td class="px-6 py-4">
+<span class="px-3 py-1 rounded-full text-label-sm bg-surface-container-high text-on-surface-variant">Pending</span>
+</td>
+<td class="px-6 py-4 text-right">
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-lowest transition-colors group">
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="A portrait of a smiling middle-aged professional woman with glasses, soft studio lighting, professional corporate headshot style, high quality" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoA6J8cNuA-3e90vGYjIIl8pFQzdO8IYjizXfyZ5_fJxVqt_rc8OX4PteY-ABA8J9Rh6jeIuRFUHAX2hCoKDKk95XmCIrXnsXuobgsqzR0O2HqWCcjGGGmw9dMF5k82-Wxsy7BH79KRZaPMfXFjGrkey3v0NiS6DFgOUqN1BRIJQsu0M_sKg3QRd4gRzMamWPl6zJ7xLeV9O4tYmfKx-51p-jaLP0XaDbwMpCPwXEr790PNQybpASr">
+<div>
+<p class="font-label-md text-on-surface">Maria S.</p>
+<p class="text-label-sm text-on-surface-variant">Standard User</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 text-body-md text-on-surface">Honda HRV Prestige</td>
+<td class="px-6 py-4">
+<p class="text-label-md text-on-surface">Oct 20 - Oct 23</p>
+<p class="text-label-sm text-on-surface-variant">3 Days</p>
+</td>
+<td class="px-6 py-4">
+<span class="px-3 py-1 rounded-full text-label-sm bg-green-100 text-green-800" style="background-color: #e8f5e9; color: #2e7d32;">Completed</span>
+</td>
+<td class="px-6 py-4 text-right">
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Fleet Status Section -->
+<section class="flex flex-col gap-6 transition-all duration-700 opacity-0 opacity-100">
+<div class="px-2">
+<span class="font-label-sm text-secondary uppercase tracking-[0.2em]">Inventory Watch</span>
+<h2 class="font-headline-md text-on-surface mt-1">Fleet Status</h2>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm flex flex-col items-center">
+<!-- Semi-circular Progress Chart (Inline SVG) -->
+<div class="relative w-48 h-24 overflow-hidden mb-6">
+<svg class="w-full h-full transform" viewBox="0 0 100 50">
+<path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke="#edeeef" stroke-linecap="round" stroke-width="8"></path>
+<path class="animate-[dash_2s_ease-out_forwards]" d="M 10 50 A 40 40 0 0 1 80 15" fill="none" stroke="#003c90" stroke-linecap="round" stroke-width="8" style="stroke-dasharray: 126; stroke-dashoffset: 20;"></path>
+</svg>
+<div class="absolute inset-x-0 bottom-0 flex flex-col items-center justify-end h-full">
+<p class="font-display-lg text-on-surface">84%</p>
+<p class="text-label-sm text-on-surface-variant uppercase tracking-widest pb-1">Available</p>
+</div>
+</div>
+<!-- Breakdown List -->
+<div class="w-full space-y-4">
+<div class="flex items-center justify-between p-3 rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="text-body-md text-on-surface">Available Now</span>
+</div>
+<span class="font-label-md text-on-surface">142</span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="text-body-md text-on-surface">Currently Rented</span>
+</div>
+<span class="font-label-md text-on-surface">24</span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="text-body-md text-on-surface">In Maintenance</span>
+</div>
+<span class="font-label-md text-on-surface">8</span>
+</div>
+</div>
+<div class="w-full mt-8 pt-8 border-t border-surface-container">
+<div class="flex items-center justify-between mb-4">
+<h4 class="font-label-md text-on-surface uppercase tracking-wider">Upcoming Servicing</h4>
+<span class="text-label-sm text-primary">View Schedule</span>
+</div>
+<div class="flex -space-x-3 overflow-hidden">
+<img class="inline-block h-10 w-10 rounded-full ring-2 ring-white" data-alt="Close up of a luxury car steering wheel, bokeh background, premium automotive photography, deep blues and blacks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAys3dhnP5uLyEzARMq-UvioX4swSqiclAxDZ5iZ_5qUyXG1ua-bDU7NSxCb9XDPXh66x-CinpgfjjuQNeFB6vzcKcx7Klt_-PG2SPCK12yBcJY1KTKJM98C1bKwx5n-QWo0tZTyJo9j5iXWRqTp0zN1ZvtIoTC-mK6E8tzFSk6PJ4PVxMGkJv-NWrbcWySZNgUdsLAiici7nAnapekrZIERMhyKjfCnitTNjk4XZiPvQC_xR8_Dp1G">
+<img class="inline-block h-10 w-10 rounded-full ring-2 ring-white" data-alt="Silver car front grille detailing, modern luxury sedan, sharp focus, professional lighting, automotive design showcase" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAISmvbpL8wNWSk18J9SMKEdqUckJYzqpXnvgh8qlTeck1rZyOEHauNJBhh8DVTuqNCdjMllgO6XAfY7_h2VZU4b--eX7Qj27WP21DBjIeyFyWZPFRW7JLmzJzrOCNR4XHnlxXxNrabuNxhsYyFbTp3VbAPxh84y-IE_OYz5AW3UhYLwfwQ61ANAncnByN0N5IDVhgktQL6iASQ-V8znbZXqZmRYjcavtDGF9jhBusTgIlPakI84G7x">
+<div class="flex h-10 w-10 items-center justify-center rounded-full bg-surface-container ring-2 ring-white text-label-sm font-bold">+6</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Map Section: Depot Locations -->
+<section class="flex flex-col gap-6 mt-4 transition-all duration-700 opacity-0 opacity-100">
+<div class="flex items-center justify-between px-2">
+<div>
+<span class="font-label-sm text-tertiary uppercase tracking-[0.2em]">Geospatial Status</span>
+<h2 class="font-headline-md text-on-surface mt-1">Depot Distribution</h2>
+</div>
+<div class="flex gap-2">
+<button class="bg-surface-container-high px-4 py-2 rounded-full text-label-sm text-on-surface font-bold">Lombok Airport</button>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-full text-label-sm font-bold">Mataram Center</button>
+<button class="bg-surface-container-high px-4 py-2 rounded-full text-label-sm text-on-surface font-bold">Senggigi Hub</button>
+</div>
+</div>
+<div class="w-full h-80 rounded-2xl shadow-sm overflow-hidden relative group" data-location="Mataram, Lombok, Indonesia">
+<!-- Overlay for context -->
+<div class="absolute top-6 left-6 z-10 bg-surface/90 backdrop-blur-md p-4 rounded-xl shadow-lg max-w-xs border border-white/20">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-md text-on-surface">Main Hub - Mataram</span>
+</div>
+<p class="text-body-md text-on-surface-variant leading-tight">Operating at 94% efficiency. Current fleet: 45 units available.</p>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple intersection observer to trigger "counting" effect for metrics if needed
+  const observerOptions = {
+    threshold: 0.1
+  };
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('opacity-100');
+        entry.target.classList.remove('translate-y-4');
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('section').forEach(section => {
+    section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-4');
+    observer.observe(section);
+  });
+</script>
+<style>
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 126;
+    }
+    to {
+      stroke-dashoffset: 20;
+    }
+  }
+</style></main></div>
+
+</body></html>
